@@ -20,7 +20,7 @@
 <p>
 - 🔭 I’m currently learning  New Frameworks.<br>
 - 🌟 Aspiring to become a    Full Stack Developer.<br>
-- 👨‍💻 My portfolio  <a href="https://qadirdadkazi.netlify.app/">GitHub</a>.<br>
+- 👨‍💻 My portfolio  <a href="https://qadirdadkazi.netlify.app/">Portfolio</a>.<br>
 - 🌱 I’m exploring   Full stack development.<br>
 - 💼 Open to   freelance opportunities and collaboration on exciting projects.<br>
 </p>

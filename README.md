@@ -144,8 +144,9 @@
 ## 💡 Fun Fact
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=700&width=500&lines=I+love+building+pixel-perfect+web+experiences,Responsive+design+is+my+superpower,Transforming+coffee+into+code+daily!" alt="Fun Fact" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=700&width=500&lines=Transforming+coffee+into+code+daily!;Crafting+responsive+web+experiences+one+pixel+at+a+time!" alt="Fun Fact" />
 </p>
+
 
 
 ---

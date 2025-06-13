@@ -357,7 +357,7 @@ console.log("Welcome to my GitHub profile! 🎉");
 <div align="center">
   
   <!-- Coding Stats -->
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=qadirdad-kazi&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&custom_title=Weekly%20Coding%20Activity&layout=compact" alt="WakaTime Weekly Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=QadirdadKazi&theme=radical&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&custom_title=Weekly%20Coding%20Activity&layout=compact" alt="WakaTime Weekly Stats" />
   
   <!-- Activity Heatmap -->
   <img src="https://ghchart.rshah.org/58a6ff/qadirdad-kazi" alt="GitHub Activity Heatmap" />

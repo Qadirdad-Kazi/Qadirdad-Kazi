@@ -769,6 +769,7 @@ console.log("Welcome to my GitHub profile! 🎉");
   <img src="https://komarev.com/ghpvc/?username=qadirdad-kazi&style=for-the-badge&color=blueviolet" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/qadirdad-kazi?style=for-the-badge&color=blue" alt="Followers" />
   <img src="https://img.shields.io/github/stars/qadirdad-kazi?style=for-the-badge&color=yellow" alt="Stars" />
+<<<<<<< HEAD
 
   <!-- SPOTIFY_NOW -->
   🎵 Now Playing: *loading...*
@@ -786,8 +787,15 @@ console.log("Welcome to my GitHub profile! 🎉");
   > Loading inspirational quote...
   <!-- END_DAILY_QUOTE -->
 
+=======
+  
+>>>>>>> 9dad74ee0363b63a9cb8c1e0decd00afa672b3cd
   <!-- Last Updated -->
   <br><br>
   <img src="https://img.shields.io/badge/Last%20Updated-January%202025-brightgreen?style=flat-square" alt="Last Updated" />
   
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> 9dad74ee0363b63a9cb8c1e0decd00afa672b3cd

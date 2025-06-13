@@ -727,14 +727,6 @@ console.log("Welcome to my GitHub profile! 🎉");
 
 <div align="center">
   
-  <!-- Enhanced Footer -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" />
-  
-  <!-- Final Message -->
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=58A6FF&center=true&width=800&lines=Thanks+for+visiting+my+profile!+⭐;Star+some+repositories+if+you+find+them+useful!;Happy+coding!+🚀✨;Let's+build+the+future+together!;Open+to+collaboration+and+new+opportunities!" alt="Footer Message" />
-  
-  <br><br>
-  
   <!-- Professional Footer Stats -->
   <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 20px; border-radius: 15px; color: white; margin: 20px 0;">
   <table>
@@ -754,18 +746,8 @@ console.log("Welcome to my GitHub profile! 🎉");
   </tr>
   </table>
   </div>
-  
-  <!-- Inspirational Quote -->
-  <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; margin: 20px 0;">
-  <em>"The best way to predict the future is to create it." - Peter Drucker</em>
-  </div>
-  
-  <br>
-  
-  **⭐ From [Qadirdad Kazi](https://github.com/qadirdad-kazi) - Building the future one commit at a time! 🚀**
-  
+
   <!-- Enhanced Visitor Counter -->
-  <br><br>
   <img src="https://komarev.com/ghpvc/?username=qadirdad-kazi&style=for-the-badge&color=blueviolet" alt="Profile views" />
   <img src="https://img.shields.io/github/followers/qadirdad-kazi?style=for-the-badge&color=blue" alt="Followers" />
   <img src="https://img.shields.io/github/stars/qadirdad-kazi?style=for-the-badge&color=yellow" alt="Stars" />
@@ -789,3 +771,8 @@ console.log("Welcome to my GitHub profile! 🎉");
   **⭐ From [Qadirdad Kazi](https://github.com/qadirdad-kazi) - Building the future one commit at a time! 🚀**
 
 </div>
+
+<!-- Enhanced Footer Wave -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" />
+</p>

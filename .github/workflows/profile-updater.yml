@@ -2,7 +2,7 @@ name: Update Profile README
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 */4 * * *'  # Run every 4 hours
   workflow_dispatch:
 
 jobs:
@@ -29,7 +29,10 @@ jobs:
         run: python .github/scripts/update_readme.py
 
       - name: Commit & Push if changed
+        if: success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git diff --quiet || (git add README.md && git commit -m "chore: update profile README" && git push)
+          git diff --quiet README.md || (git add README.md && \
+            git commit -m "chore: update profile README [skip ci]" && \
+            git push)

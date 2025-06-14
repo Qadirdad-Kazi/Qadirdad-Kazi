@@ -1,72 +1,182 @@
 import os
 import re
+import json
+import time
+import hashlib
 import requests
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from pathlib import Path
 from dotenv import load_dotenv
+from typing import Optional, Dict, Any, List, Tuple
 
+# Load environment variables
 load_dotenv()
 
+# Constants
 README_PATH = "README.md"
+CACHE_DIR = Path(".github/cache")
+CACHE_TTL = 3600  # 1 hour cache TTL
 
-def update_section(content, tag, new_text):
+# Ensure cache directory exists
+CACHE_DIR.mkdir(parents=True, exist_ok=True)
+
+def get_cache_key(prefix: str, *args) -> str:
+    """Generate a cache key based on function name and arguments."""
+    key = f"{prefix}_{'_'.join(str(arg) for arg in args)}"
+    return hashlib.md5(key.encode()).hexdigest()
+
+def get_cached_data(key: str) -> Optional[Dict[str, Any]]:
+    """Get cached data if it exists and is not expired."""
+    cache_file = CACHE_DIR / f"{key}.json"
+    if not cache_file.exists():
+        return None
+        
+    try:
+        with open(cache_file, 'r') as f:
+            data = json.load(f)
+            if time.time() - data.get('timestamp', 0) < CACHE_TTL:
+                return data.get('data')
+    except (json.JSONDecodeError, OSError):
+        pass
+    return None
+
+def set_cached_data(key: str, data: Any) -> None:
+    """Cache data with a timestamp."""
+    try:
+        cache_file = CACHE_DIR / f"{key}.json"
+        with open(cache_file, 'w') as f:
+            json.dump({'timestamp': time.time(), 'data': data}, f)
+    except OSError:
+        pass
+
+def update_section(content: str, tag: str, new_text: str) -> str:
+    """Update a section in the README marked with HTML comments."""
     pattern = rf"(<!-- {tag} -->)(.*?)(<!-- END_{tag} -->)"
     return re.sub(pattern, rf"\1\n{new_text}\n\3", content, flags=re.DOTALL)
 
-def get_spotify_now():
-    token_url = "https://accounts.spotify.com/api/token"
-    data = {
-        "grant_type": "refresh_token",
-        "refresh_token": os.environ["SPOTIFY_REFRESH_TOKEN"],
-        "client_id": os.environ["SPOTIFY_CLIENT_ID"],
-        "client_secret": os.environ["SPOTIFY_CLIENT_SECRET"],
-    }
-    r = requests.post(token_url, data=data)
-    access_token = r.json().get("access_token")
-    if not access_token:
-        return "🎵 Now Playing: *Unable to fetch*"
-    headers = {"Authorization": f"Bearer {access_token}"}
-    r = requests.get("https://api.spotify.com/v1/me/player/currently-playing", headers=headers)
-    if r.status_code != 200 or not r.json():
-        return "🎵 Now Playing: *Nothing playing*"
-    item = r.json().get("item")
-    if not item:
-        return "🎵 Now Playing: *Nothing playing*"
-    track = item["name"]
-    artist = ", ".join([a["name"] for a in item["artists"]])
-    url = item["external_urls"]["spotify"]
-    return f"🎵 Now Playing: [{track} - {artist}]({url})"
+def get_spotify_now() -> str:
+    """Get currently playing track from Spotify with caching and error handling."""
+    cache_key = get_cache_key("spotify_now")
+    cached = get_cached_data(cache_key)
+    if cached:
+        return cached
 
-def get_last_updated():
+    try:
+        # Get access token
+        token_url = "https://accounts.spotify.com/api/token"
+        data = {
+            "grant_type": "refresh_token",
+            "refresh_token": os.environ["SPOTIFY_REFRESH_TOKEN"],
+            "client_id": os.environ["SPOTIFY_CLIENT_ID"],
+            "client_secret": os.environ["SPOTIFY_CLIENT_SECRET"],
+        }
+        
+        response = requests.post(token_url, data=data, timeout=10)
+        response.raise_for_status()
+        
+        access_token = response.json().get("access_token")
+        if not access_token:
+            raise ValueError("No access token received")
+
+        # Get currently playing track
+        headers = {"Authorization": f"Bearer {access_token}"}
+        response = requests.get(
+            "https://api.spotify.com/v1/me/player/currently-playing",
+            headers=headers,
+            timeout=10
+        )
+        
+        if response.status_code == 204:  # No content
+            result = "🎵 Now Playing: *Nothing playing*"
+        elif response.status_code == 200:
+            data = response.json()
+            item = data.get("item", {})
+            if not item:
+                result = "🎵 Now Playing: *Nothing playing*"
+            else:
+                track = item.get("name", "Unknown Track")
+                artists = ", ".join(a.get("name", "Unknown Artist") for a in item.get("artists", []))
+                url = item.get("external_urls", {}).get("spotify", "#")
+                result = f"🎵 Now Playing: [{track} - {artists}]({url})"
+        else:
+            result = f"🎵 Now Playing: *Status {response.status_code}*"
+            
+        # Cache the result for 1 minute
+        set_cached_data(cache_key, result)
+        return result
+        
+    except requests.RequestException as e:
+        return f"🎵 Now Playing: *Error: {str(e)}*"
+    except Exception as e:
+        return "🎵 Now Playing: *Temporarily unavailable*"
+
+def get_last_updated() -> str:
+    """Get the current timestamp in a readable format."""
     now = datetime.now(timezone.utc)
-    return f"Last Updated: {now.strftime('%B %d, %Y %H:%M UTC')}"
+    return f"Last Updated: {now.strftime('%B %d, %Y %H:%M UTC')} (updates every 4 hours)"
 
-def get_recent_activity():
-    repo_env = os.getenv("GITHUB_REPOSITORY")
-    if repo_env:
-        username = repo_env.split('/')[0]
-    else:
-        username = os.environ.get("GITHUB_USERNAME", "")
-    token = os.environ.get("PERSONAL_ACCESS_TOKEN")
-    headers = {"Authorization": f"token {token}"}
-    url = f"https://api.github.com/users/{username}/events/public"
-    r = requests.get(url, headers=headers)
-    if r.status_code != 200:
-        return "- Unable to fetch activity."
-    events = r.json()[:5]
-    lines = []
-    for e in events:
-        t = e["type"]
-        repo = e["repo"]["name"]
-        created = e["created_at"][:10]
-        if t == "PushEvent":
-            lines.append(f"- 📝 Commit to **{repo}** on {created}")
-        elif t == "PullRequestEvent":
-            action = e["payload"]["action"]
-            lines.append(f"- 🔀 PR {action} in **{repo}** on {created}")
-        elif t == "IssuesEvent":
-            action = e["payload"]["action"]
-            lines.append(f"- ❗ Issue {action} in **{repo}** on {created}")
-    return "\n".join(lines) if lines else "- No recent GitHub activity."
+def get_recent_activity() -> str:
+    """Get recent GitHub activity with caching and error handling."""
+    cache_key = get_cache_key("github_activity")
+    cached = get_cached_data(cache_key)
+    if cached:
+        return cached
+
+    try:
+        # Get username from environment
+        repo_env = os.getenv("GITHUB_REPOSITORY")
+        username = repo_env.split('/')[0] if repo_env else os.environ.get("GITHUB_USERNAME", "")
+        token = os.environ.get("PERSONAL_ACCESS_TOKEN")
+        
+        if not username or not token:
+            return "- GitHub activity: Missing configuration"
+
+        # Prepare request
+        headers = {"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"}
+        url = f"https://api.github.com/users/{username}/events/public?per_page=5"
+        
+        # Make request with timeout
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()
+        
+        events = response.json()
+        if not isinstance(events, list):
+            return "- GitHub activity: Unexpected response format"
+            
+        lines = []
+        for event in events[:5]:  # Limit to 5 most recent events
+            try:
+                event_type = event.get("type")
+                repo_name = event.get("repo", {}).get("name", "unknown/repo")
+                created = event.get("created_at", "")[:10]
+                
+                if event_type == "PushEvent":
+                    lines.append(f"- 📝 Pushed to **{repo_name}** on {created}")
+                elif event_type == "PullRequestEvent":
+                    action = event.get("payload", {}).get("action", "")
+                    pr_num = event.get("payload", {}).get("number", "")
+                    lines.append(f"- 🔀 PR #{pr_num} {action} in **{repo_name}** on {created}")
+                elif event_type == "IssuesEvent":
+                    action = event.get("payload", {}).get("action", "")
+                    issue_num = event.get("payload", {}).get("issue", {}).get("number", "")
+                    lines.append(f"- ❗ Issue #{issue_num} {action} in **{repo_name}** on {created}")
+                elif event_type == "CreateEvent":
+                    ref_type = event.get("payload", {}).get("ref_type", "")
+                    lines.append(f"- 🆕 Created {ref_type} in **{repo_name}** on {created}")
+                    
+            except (KeyError, AttributeError):
+                continue
+                
+        result = "\n".join(lines) if lines else "- No recent GitHub activity"
+        
+        # Cache for 1 hour
+        set_cached_data(cache_key, result)
+        return result
+        
+    except requests.RequestException as e:
+        return f"- GitHub activity: {str(e)}"
+    except Exception as e:
+        return "- GitHub activity: Temporarily unavailable"
 
 def get_daily_quote():
     try:

@@ -3,36 +3,98 @@ name: Update Profile README
 on:
   schedule:
     - cron: '0 */4 * * *'  # Run every 4 hours
-  workflow_dispatch:
+  workflow_dispatch:  # Allow manual triggers
 
+# Set job timeout to 5 minutes (300 seconds)
 jobs:
   update-readme:
+    name: Update README
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for proper git diff
+          persist-credentials: false  # Important for security
+
+      # Cache Python dependencies
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        id: cache-pip
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.10'  # Use a specific version
+          cache: 'pip'  # Enable pip caching
 
       - name: Install dependencies
-        run: pip install requests
+        run: |
+          python -m pip install --upgrade pip
+          pip install --no-cache-dir requests python-dotenv
 
-      - name: Run updater script
+      # Cache the .github/cache directory between runs
+      - name: Cache data
+        uses: actions/cache@v3
+        id: cache-data
+        with:
+          path: .github/cache
+          key: ${{ runner.os }}-cache-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-cache-
+
+
+      - name: Update README
+        id: update
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
           SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           GITHUB_USERNAME: qadirdad-kazi
-        run: python .github/scripts/update_readme.py
-
-      - name: Commit & Push if changed
-        if: success()
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git diff --quiet README.md || (git add README.md && \
-            git commit -m "chore: update profile README [skip ci]" && \
-            git push)
+          # Create cache directory if it doesn't exist
+          mkdir -p .github/cache
+          
+          # Run the update script
+          python .github/scripts/update_readme.py
+          
+          # Check if README was modified
+          git diff --quiet README.md || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.update.outputs.changed == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Add all changes
+          git add README.md .github/cache/
+          
+          # Create commit
+          git commit -m "docs: update profile information [skip ci]" \
+                    -m "Automated update: $(date -u +'%Y-%m-%d %H:%M:%S') UTC"
+          
+          # Push changes
+          git push
+
+      # Add a success notification (optional)
+      - name: Success
+        if: success()
+        run: echo "✅ Profile updated successfully!"
+
+      # Add a failure notification (optional)
+      - name: Failure
+        if: failure()
+        run: |
+          echo "❌ Failed to update profile"
+          exit 1

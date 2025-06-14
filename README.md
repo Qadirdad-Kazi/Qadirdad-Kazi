@@ -71,9 +71,7 @@ const qadirdad = {
   ],
   goals2024: [
     "🚀 Launch 3 major open source projects",
-    "📚 Master cloud-native development",
-    "🤝 Mentor 50+ developers",
-    "✍️ Write 52 technical articles"
+    "📚 Master cloud-native development"
 };
 
 console.log("Welcome to my GitHub profile! 🎉");
@@ -424,12 +422,9 @@ Loading achievements...
 ### 🎯 Fun Facts About Me
 <div style="background: linear-gradient(135deg, #4facfe, #00f2fe); padding: 20px; border-radius: 15px; color: white; margin: 20px 0;">
 <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px;">
-🎲 <strong>Rubik's Cube:</strong> Can solve in under 2 minutes<br>
-🎮 <strong>Gaming:</strong> Strategy games enthusiast (Chess, Civilization)<br>
-📚 <strong>Reading:</strong> Sci-fi novels and tech biographies<br>
-🏃‍♂️ <strong>Fitness:</strong> Morning runner and yoga practitioner<br>
-🍕 <strong>Cooking:</strong> Weekend chef experimenting with cuisines<br>
-🌱 <strong>Gardening:</strong> Growing herbs and small vegetables
+🎮 <strong>Gaming:</strong> PS5 and PC games, especially action and adventure titles<br>
+📚 <strong>Reading:</strong> Horror, action, and adventure genres<br>
+🏃‍♂️ <strong>Fitness:</strong> Gym enthusiast, focused on strength and endurance<br>
 </div>
 </div>
 

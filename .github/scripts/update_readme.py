@@ -59,8 +59,9 @@ def update_section(content: str, section_name: str, new_content: str) -> str:
     if start_idx == -1 or end_idx == -1:
         return content
     
-    # For FEATURED_PROJECTS, remove the entire section including the heading
-    if section_name == "FEATURED_PROJECTS":
+    # For sections to remove completely including their headings
+    sections_to_remove = ["FEATURED_PROJECTS", "RECENT_ACTIVITY", "DAILY_QUOTE"]
+    if section_name in sections_to_remove:
         # Find the start of the section (including the heading)
         section_start = content.rfind('##', 0, start_idx)
         if section_start != -1:
@@ -70,7 +71,10 @@ def update_section(content: str, section_name: str, new_content: str) -> str:
                 start_idx = section_start
     
     end_idx += len(end_tag)
-    return content[:start_idx] + f"{new_content}" + content[end_idx:]
+    # If new_content is empty, return the content without the section
+    if not new_content.strip():
+        return content[:start_idx] + content[end_idx:]
+    return content[:start_idx] + f"{start_tag}\n{new_content}\n{end_tag}" + content[end_idx:]
 
 def get_spotify_now() -> str:
     """Get currently playing track from Spotify with caching and error handling."""
@@ -136,74 +140,83 @@ def get_last_updated() -> str:
 def get_recent_activity() -> str:
     """Get recent GitHub activity with caching and error handling."""
     cache_key = get_cache_key("github_activity")
-    cached = get_cached_data(cache_key)
-    if cached:
-        return cached
-
     try:
-        # Get username from environment
-        repo_env = os.getenv("GITHUB_REPOSITORY")
-        username = repo_env.split('/')[0] if repo_env else os.environ.get("GITHUB_USERNAME", "")
-        token = os.environ.get("PERSONAL_ACCESS_TOKEN")
+        token = os.environ.get("GITHUB_TOKEN")
+        username = os.environ.get("GITHUB_USERNAME") or os.getenv("GITHUB_REPOSITORY", "/").split('/')[0]
+        cache_key = f"github_activity_{username}"
         
-        if not username or not token:
-            return "- GitHub activity: Missing configuration"
-
-        # Prepare request
-        headers = {"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"}
-        url = f"https://api.github.com/users/{username}/events/public?per_page=5"
-        
-        # Make request with timeout
-        response = requests.get(url, headers=headers, timeout=10)
-        response.raise_for_status()
-        
-        events = response.json()
-        if not isinstance(events, list):
-            return "- GitHub activity: Unexpected response format"
+        # Try to get from cache first
+        cached_data = get_cached_data(cache_key)
+        if cached_data is not None:
+            return cached_data
             
-        lines = []
-        for event in events[:5]:  # Limit to 5 most recent events
-            try:
-                event_type = event.get("type")
-                repo_name = event.get("repo", {}).get("name", "unknown/repo")
-                created = event.get("created_at", "")[:10]
-                
-                if event_type == "PushEvent":
-                    lines.append(f"- 📝 Pushed to **{repo_name}** on {created}")
-                elif event_type == "PullRequestEvent":
-                    action = event.get("payload", {}).get("action", "")
-                    pr_num = event.get("payload", {}).get("number", "")
-                    lines.append(f"- 🔀 PR #{pr_num} {action} in **{repo_name}** on {created}")
-                elif event_type == "IssuesEvent":
-                    action = event.get("payload", {}).get("action", "")
-                    issue_num = event.get("payload", {}).get("issue", {}).get("number", "")
-                    lines.append(f"- ❗ Issue #{issue_num} {action} in **{repo_name}** on {created}")
-                elif event_type == "CreateEvent":
-                    ref_type = event.get("payload", {}).get("ref_type", "")
-                    lines.append(f"- 🆕 Created {ref_type} in **{repo_name}** on {created}")
-                    
-            except (KeyError, AttributeError):
-                continue
-                
-        result = "\n".join(lines) if lines else "- No recent GitHub activity"
+        headers = {"Authorization": f"token {token}"} if token else {}
+        r = requests.get(
+            f"https://api.github.com/users/{username}/events/public?per_page=5",
+            headers=headers,
+            timeout=10
+        )
+        r.raise_for_status()
+        events = r.json()
         
-        # Cache for 1 hour
+        if not events:
+            return ""
+            
+        result = []
+        for event in events[:5]:  # Limit to 5 most recent events
+            if event["type"] == "PushEvent":
+                repo = event["repo"]["name"]
+                branch = event["payload"]["ref"].split("/")[-1]
+                commits = event["payload"]["commits"]
+                commit_msgs = [commit["message"].split("\n")[0] for commit in commits[:2]]
+                result.append(f"- Pushed to [{repo}](https://github.com/{repo}) on branch `{branch}`")
+                for msg in commit_msgs:
+                    result.append(f"  - {msg}")
+            elif event["type"] == "CreateEvent":
+                repo = event["repo"]["name"]
+                ref_type = event["payload"]["ref_type"]
+                ref = event["payload"]["ref"]
+                result.append(f"- Created {ref_type} `{ref}` in [{repo}](https://github.com/{repo})")
+            elif event["type"] == "PullRequestEvent":
+                action = event["payload"]["action"]
+                pr = event["payload"]["pull_request"]
+                result.append(f"- {action.capitalize()} pull request: [{pr['title']}]({pr['html_url']}) in {pr['head']['repo']['name']}")
+            elif event["type"] == "IssuesEvent":
+                action = event["payload"]["action"]
+                issue = event["payload"]["issue"]
+                result.append(f"- {action.capitalize()} issue: [{issue['title']}]({issue['html_url']}) in {event['repo']['name']}")
+                
+        if not result:  # If no events were added
+            return ""
+            
+        result = "\n".join(result)
+        # Cache the result for 1 hour
         set_cached_data(cache_key, result)
         return result
         
     except Exception:
-        # Return empty string instead of error message
-        return ""
+        return ""  # Return empty string on any error
 
 def get_daily_quote():
+    """Get a daily quote with error handling."""
     try:
+        cache_key = "daily_quote"
+        cached_quote = get_cached_data(cache_key)
+        if cached_quote is not None:
+            return cached_quote
+            
         r = requests.get("https://api.quotable.io/random", timeout=5)
         if r.status_code != 200:
-            return ""  # Return empty string instead of error
+            return ""
+            
         data = r.json()
-        return f'> {data["content"]}\n> — {data["author"]}'
+        quote = f'> {data["content"]}\n> — {data["author"]}'
+        
+        # Cache the quote for 12 hours
+        set_cached_data(cache_key, quote, ttl=43200)  # 12 hours in seconds
+        return quote
     except Exception:
-        return ""  # Return empty string on error
+        return ""
 
 def get_featured_projects():
     token = os.environ.get("GITHUB_TOKEN")

@@ -220,7 +220,7 @@ def get_featured_projects():
         return ""  # Return empty string on error
     nodes = data["user"]["pinnedItems"]["nodes"]
     if not nodes:
-        return "- No featured projects found. Pin repositories on your GitHub profile to feature them here."
+        return ""  # Return empty string when no pinned repositories are found
     lines = []
     for repo in nodes:
         lang = repo["primaryLanguage"]["name"] if repo["primaryLanguage"] else ""

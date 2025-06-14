@@ -112,32 +112,10 @@ console.log("Welcome to my GitHub profile! 🎉");
 ![Firebase](https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 
-### 🔧 DevOps & Tools
-![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white)
-
-</div>
-
----
-
-## 📊 GitHub Analytics
-
-<!-- GitHub Activity Graph -->
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=qadirdad-kazi&theme=react-dark&hide_border=true&area=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ff6b6b" alt="GitHub Activity Graph" />
-</div>
-
-<!-- GitHub Trophies -->
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=qadirdad-kazi&theme=radical&no-frame=true&no-bg=true&row=1&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" />
-</div>
-
----
-
+#<!-- FEATURED_PROJECTS -->
 <!-- FEATURED_PROJECTS -->
+<!-- END_FEATURED_PROJECTS -->
+<!-- END_FEATURED_PROJECTS -->
 <!-- END_FEATURED_PROJECTS -->
 
 ---

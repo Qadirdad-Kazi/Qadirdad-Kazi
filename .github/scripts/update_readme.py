@@ -281,11 +281,30 @@ def main():
         content = f.read()
     content = update_section(content, "SPOTIFY_NOW", get_spotify_now())
     content = update_section(content, "LAST_UPDATED", get_last_updated())
-    content = update_section(content, "RECENT_ACTIVITY", get_recent_activity())
-    content = update_section(content, "DAILY_QUOTE", get_daily_quote())
+    
+    # Handle GitHub activity section
+    activity = get_recent_activity()
+    if not activity or "Missing configuration" in activity:
+        content = update_section(content, "RECENT_ACTIVITY", "<!-- RECENT_ACTIVITY -->\n<!-- END_RECENT_ACTIVITY -->")
+    else:
+        content = update_section(content, "RECENT_ACTIVITY", activity)
+    
+    # Handle daily quote section
+    quote = get_daily_quote()
+    if not quote:
+        content = update_section(content, "DAILY_QUOTE", "<!-- DAILY_QUOTE -->\n<!-- END_DAILY_QUOTE -->")
+    else:
+        content = update_section(content, "DAILY_QUOTE", quote)
+    
     # Remove featured projects section completely
     content = update_section(content, "FEATURED_PROJECTS", "<!-- FEATURED_PROJECTS -->\n<!-- END_FEATURED_PROJECTS -->")
-    content = update_section(content, "ACHIEVEMENTS", get_achievements())
+    
+    # Handle achievements section
+    achievements = get_achievements()
+    if not achievements:
+        content = update_section(content, "ACHIEVEMENTS", "<!-- ACHIEVEMENTS -->\n<!-- END_ACHIEVEMENTS -->")
+    else:
+        content = update_section(content, "ACHIEVEMENTS", achievements)
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
 

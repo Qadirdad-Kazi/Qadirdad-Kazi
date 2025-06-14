@@ -137,65 +137,7 @@ def get_last_updated() -> str:
     now = datetime.now(timezone.utc)
     return f"Last Updated: {now.strftime('%B %d, %Y %H:%M UTC')} (updates every 4 hours)"
 
-def get_recent_activity() -> str:
-    """Get recent GitHub activity with caching and error handling."""
-    cache_key = get_cache_key("github_activity")
-    try:
-        token = os.environ.get("GITHUB_TOKEN")
-        username = os.environ.get("GITHUB_USERNAME") or os.getenv("GITHUB_REPOSITORY", "/").split('/')[0]
-        cache_key = f"github_activity_{username}"
-        
-        # Try to get from cache first
-        cached_data = get_cached_data(cache_key)
-        if cached_data is not None:
-            return cached_data
-            
-        headers = {"Authorization": f"token {token}"} if token else {}
-        r = requests.get(
-            f"https://api.github.com/users/{username}/events/public?per_page=5",
-            headers=headers,
-            timeout=10
-        )
-        r.raise_for_status()
-        events = r.json()
-        
-        if not events:
-            return ""
-            
-        result = []
-        for event in events[:5]:  # Limit to 5 most recent events
-            if event["type"] == "PushEvent":
-                repo = event["repo"]["name"]
-                branch = event["payload"]["ref"].split("/")[-1]
-                commits = event["payload"]["commits"]
-                commit_msgs = [commit["message"].split("\n")[0] for commit in commits[:2]]
-                result.append(f"- Pushed to [{repo}](https://github.com/{repo}) on branch `{branch}`")
-                for msg in commit_msgs:
-                    result.append(f"  - {msg}")
-            elif event["type"] == "CreateEvent":
-                repo = event["repo"]["name"]
-                ref_type = event["payload"]["ref_type"]
-                ref = event["payload"]["ref"]
-                result.append(f"- Created {ref_type} `{ref}` in [{repo}](https://github.com/{repo})")
-            elif event["type"] == "PullRequestEvent":
-                action = event["payload"]["action"]
-                pr = event["payload"]["pull_request"]
-                result.append(f"- {action.capitalize()} pull request: [{pr['title']}]({pr['html_url']}) in {pr['head']['repo']['name']}")
-            elif event["type"] == "IssuesEvent":
-                action = event["payload"]["action"]
-                issue = event["payload"]["issue"]
-                result.append(f"- {action.capitalize()} issue: [{issue['title']}]({issue['html_url']}) in {event['repo']['name']}")
-                
-        if not result:  # If no events were added
-            return ""
-            
-        result = "\n".join(result)
-        # Cache the result for 1 hour
-        set_cached_data(cache_key, result)
-        return result
-        
-    except Exception:
-        return ""  # Return empty string on any error
+
 
 def get_daily_quote():
     """Get a daily quote with error handling."""
@@ -281,13 +223,6 @@ def main():
         content = f.read()
     content = update_section(content, "SPOTIFY_NOW", get_spotify_now())
     content = update_section(content, "LAST_UPDATED", get_last_updated())
-    
-    # Handle GitHub activity section
-    activity = get_recent_activity()
-    if not activity or "Missing configuration" in activity:
-        content = update_section(content, "RECENT_ACTIVITY", "<!-- RECENT_ACTIVITY -->\n<!-- END_RECENT_ACTIVITY -->")
-    else:
-        content = update_section(content, "RECENT_ACTIVITY", activity)
     
     # Handle daily quote section
     quote = get_daily_quote()

@@ -173,20 +173,19 @@ def get_recent_activity() -> str:
         set_cached_data(cache_key, result)
         return result
         
-    except requests.RequestException as e:
-        return f"- GitHub activity: {str(e)}"
-    except Exception as e:
-        return "- GitHub activity: Temporarily unavailable"
+    except Exception:
+        # Return empty string instead of error message
+        return ""
 
 def get_daily_quote():
     try:
         r = requests.get("https://api.quotable.io/random", timeout=5)
         if r.status_code != 200:
-            return "> Unable to fetch quote."
+            return ""  # Return empty string instead of error
         data = r.json()
         return f'> {data["content"]}\n> — {data["author"]}'
     except Exception:
-        return "> Unable to fetch quote (network error)."
+        return ""  # Return empty string on error
 
 def get_featured_projects():
     token = os.environ.get("GITHUB_TOKEN")
@@ -218,7 +217,7 @@ def get_featured_projects():
     )
     data = r.json().get("data")
     if not data or not data.get("user") or not data["user"].get("pinnedItems"):
-        return "- Unable to fetch featured projects. Please check your GitHub token, username, and that you have pinned repositories."
+        return ""  # Return empty string on error
     nodes = data["user"]["pinnedItems"]["nodes"]
     if not nodes:
         return "- No featured projects found. Pin repositories on your GitHub profile to feature them here."
@@ -236,7 +235,7 @@ def get_achievements():
     url = f"https://api.github.com/users/{username}"
     r = requests.get(url, headers=headers)
     if r.status_code != 200:
-        return "- Unable to fetch achievements."
+        return ""  # Return empty string on error
     user = r.json()
     lines = [
         f"- 🏆 **Public Repos:** {user.get('public_repos', 0)}",

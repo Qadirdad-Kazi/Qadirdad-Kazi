@@ -572,11 +572,11 @@ console.log("Welcome to my GitHub profile! 🎉");
   <img src="https://img.shields.io/github/stars/qadirdad-kazi?style=for-the-badge&color=yellow" alt="Stars" />
 
   <!-- SPOTIFY_NOW -->
-🎵 Now Playing: *Nothing playing*
+🎵 Now Playing: [Nabi Ka Martaba - From "Bebaakee" - Shazi Ahmad, Shahzad Ali, Saahil Solanki](https://open.spotify.com/track/2AIl0x72YimJUCOrH0KmQN)
 <!-- END_SPOTIFY_NOW -->
 
   <!-- LAST_UPDATED -->
-Last Updated: June 14, 2025 01:02 UTC
+Last Updated: June 14, 2025 01:08 UTC
 <!-- END_LAST_UPDATED -->
 
   <!-- RECENT_ACTIVITY -->

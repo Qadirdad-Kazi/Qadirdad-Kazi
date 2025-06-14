@@ -2,7 +2,7 @@ name: Update Profile README
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/3 * * * *'
   workflow_dispatch:
 
 jobs:

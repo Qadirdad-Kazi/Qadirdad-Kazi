@@ -137,10 +137,7 @@ console.log("Welcome to my GitHub profile! 🎉");
 
 ---
 
-## 🌟 Featured Projects
-
 <!-- FEATURED_PROJECTS -->
-- Unable to fetch featured projects. Please check your GitHub token, username, and that you have pinned repositories.
 <!-- END_FEATURED_PROJECTS -->
 
 ---
@@ -288,9 +285,7 @@ console.log("Welcome to my GitHub profile! 🎉");
 
 ## 🏆 Achievements & Recognition
 
-<!-- ACHIEVEMENTS -->
-- Unable to fetch achievements.
-<!-- END_ACHIEVEMENTS -->
+
 
 <div align="center">
 
@@ -559,21 +554,13 @@ console.log("Welcome to my GitHub profile! 🎉");
   <img src="https://img.shields.io/github/followers/qadirdad-kazi?style=for-the-badge&color=blue" alt="Followers" />
   <img src="https://img.shields.io/github/stars/qadirdad-kazi?style=for-the-badge&color=yellow" alt="Stars" />
 
-  <!-- SPOTIFY_NOW -->
-🎵 Now Playing: [Criminal - Britney Spears](https://open.spotify.com/track/6T689Jvh5KrSXyaPtUWZtQ)
-<!-- END_SPOTIFY_NOW -->
+  🎵 Now Playing: [Не вернусь - Вектор А](https://open.spotify.com/track/3iG77DlCZ6bVIIkodJmJRG)
 
-  <!-- LAST_UPDATED -->
-Last Updated: June 14, 2025 01:28 UTC
-<!-- END_LAST_UPDATED -->
+  Last Updated: June 14, 2025 02:35 UTC (updates every 4 hours)
 
-  <!-- RECENT_ACTIVITY -->
-- Unable to fetch activity.
-<!-- END_RECENT_ACTIVITY -->
+  - GitHub activity: Missing configuration
 
-  <!-- DAILY_QUOTE -->
-> Unable to fetch quote (network error).
-<!-- END_DAILY_QUOTE -->
+  
 
   **⭐ From [Qadirdad Kazi](https://github.com/qadirdad-kazi) - Building the future one commit at a time! 🚀**
 

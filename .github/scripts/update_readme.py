@@ -49,10 +49,28 @@ def set_cached_data(key: str, data: Any) -> None:
     except OSError:
         pass
 
-def update_section(content: str, tag: str, new_text: str) -> str:
-    """Update a section in the README marked with HTML comments."""
-    pattern = rf"(<!-- {tag} -->)(.*?)(<!-- END_{tag} -->)"
-    return re.sub(pattern, rf"\1\n{new_text}\n\3", content, flags=re.DOTALL)
+def update_section(content: str, section_name: str, new_content: str) -> str:
+    """Update a section in the README with new content."""
+    start_tag = f"<!-- {section_name} -->"
+    end_tag = f"<!-- END_{section_name} -->"
+    start_idx = content.find(start_tag)
+    end_idx = content.find(end_tag)
+    
+    if start_idx == -1 or end_idx == -1:
+        return content
+    
+    # For FEATURED_PROJECTS, remove the entire section including the heading
+    if section_name == "FEATURED_PROJECTS":
+        # Find the start of the section (including the heading)
+        section_start = content.rfind('##', 0, start_idx)
+        if section_start != -1:
+            # Find the end of the line with the heading
+            heading_end = content.find('\n', section_start)
+            if heading_end != -1:
+                start_idx = section_start
+    
+    end_idx += len(end_tag)
+    return content[:start_idx] + f"{new_content}" + content[end_idx:]
 
 def get_spotify_now() -> str:
     """Get currently playing track from Spotify with caching and error handling."""
@@ -252,8 +270,8 @@ def main():
     content = update_section(content, "LAST_UPDATED", get_last_updated())
     content = update_section(content, "RECENT_ACTIVITY", get_recent_activity())
     content = update_section(content, "DAILY_QUOTE", get_daily_quote())
-    # Remove featured projects section by setting it to empty
-    content = update_section(content, "FEATURED_PROJECTS", "")
+    # Remove featured projects section completely
+    content = update_section(content, "FEATURED_PROJECTS", "<!-- FEATURED_PROJECTS -->\n<!-- END_FEATURED_PROJECTS -->")
     content = update_section(content, "ACHIEVEMENTS", get_achievements())
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)

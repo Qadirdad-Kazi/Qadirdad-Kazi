@@ -252,7 +252,8 @@ def main():
     content = update_section(content, "LAST_UPDATED", get_last_updated())
     content = update_section(content, "RECENT_ACTIVITY", get_recent_activity())
     content = update_section(content, "DAILY_QUOTE", get_daily_quote())
-    content = update_section(content, "FEATURED_PROJECTS", get_featured_projects())
+    # Remove featured projects section by setting it to empty
+    content = update_section(content, "FEATURED_PROJECTS", "")
     content = update_section(content, "ACHIEVEMENTS", get_achievements())
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)

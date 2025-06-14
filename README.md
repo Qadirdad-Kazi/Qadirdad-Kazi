@@ -152,7 +152,7 @@ console.log("Welcome to my GitHub profile! 🎉");
 ## 🌟 Featured Projects
 
 <!-- FEATURED_PROJECTS -->
-Loading featured projects...
+- Unable to fetch featured projects. Please check your GitHub token, username, and that you have pinned repositories.
 <!-- END_FEATURED_PROJECTS -->
 
 ---
@@ -301,7 +301,7 @@ Loading featured projects...
 ## 🏆 Achievements & Recognition
 
 <!-- ACHIEVEMENTS -->
-Loading achievements...
+- Unable to fetch achievements.
 <!-- END_ACHIEVEMENTS -->
 
 <div align="center">
@@ -572,20 +572,20 @@ Loading achievements...
   <img src="https://img.shields.io/github/stars/qadirdad-kazi?style=for-the-badge&color=yellow" alt="Stars" />
 
   <!-- SPOTIFY_NOW -->
-  🎵 Now Playing: *loading...*
-  <!-- END_SPOTIFY_NOW -->
+🎵 Now Playing: *Nothing playing*
+<!-- END_SPOTIFY_NOW -->
 
   <!-- LAST_UPDATED -->
-  Last Updated: *loading...*
-  <!-- END_LAST_UPDATED -->
+Last Updated: June 14, 2025 01:02 UTC
+<!-- END_LAST_UPDATED -->
 
   <!-- RECENT_ACTIVITY -->
-  - No recent GitHub activity yet.
-  <!-- END_RECENT_ACTIVITY -->
+- Unable to fetch activity.
+<!-- END_RECENT_ACTIVITY -->
 
   <!-- DAILY_QUOTE -->
-  > Loading inspirational quote...
-  <!-- END_DAILY_QUOTE -->
+> Unable to fetch quote (network error).
+<!-- END_DAILY_QUOTE -->
 
   **⭐ From [Qadirdad Kazi](https://github.com/qadirdad-kazi) - Building the future one commit at a time! 🚀**
 

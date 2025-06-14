@@ -69,17 +69,19 @@ def get_recent_activity():
     return "\n".join(lines) if lines else "- No recent GitHub activity."
 
 def get_daily_quote():
-    r = requests.get("https://api.quotable.io/random")
-    if r.status_code != 200:
-        return "> Unable to fetch quote."
-    data = r.json()
-    return f'> {data["content"]}\n> — {data["author"]}'
+    try:
+        r = requests.get("https://api.quotable.io/random", timeout=5)
+        if r.status_code != 200:
+            return "> Unable to fetch quote."
+        data = r.json()
+        return f'> {data["content"]}\n> — {data["author"]}'
+    except Exception:
+        return "> Unable to fetch quote (network error)."
 
 def get_featured_projects():
     token = os.environ.get("GITHUB_TOKEN")
     username = os.environ.get("GITHUB_USERNAME") or os.getenv("GITHUB_REPOSITORY", "/").split('/')[0]
     headers = {"Authorization": f"token {token}"}
-    # Get pinned repos using GitHub GraphQL API
     query = '''
     query($login: String!) {
       user(login: $login) {
@@ -104,11 +106,12 @@ def get_featured_projects():
         json={"query": query, "variables": variables},
         headers=headers
     )
-    if r.status_code != 200 or not r.json().get("data"):
-        return "- Unable to fetch featured projects."
-    nodes = r.json()["data"]["user"]["pinnedItems"]["nodes"]
+    data = r.json().get("data")
+    if not data or not data.get("user") or not data["user"].get("pinnedItems"):
+        return "- Unable to fetch featured projects. Please check your GitHub token, username, and that you have pinned repositories."
+    nodes = data["user"]["pinnedItems"]["nodes"]
     if not nodes:
-        return "- No featured projects found."
+        return "- No featured projects found. Pin repositories on your GitHub profile to feature them here."
     lines = []
     for repo in nodes:
         lang = repo["primaryLanguage"]["name"] if repo["primaryLanguage"] else ""

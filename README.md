@@ -55,27 +55,25 @@ const qadirdad = {
   currentRole: "Full Stack Developer",
   code: {
     languages: ["JavaScript", "TypeScript", "Python", "PHP", "Java"],
-    frontend: ["React", "Next.js", "Vue.js", "Angular"],
-    backend: ["Node.js", "Express", "NestJS", "Django", "Laravel"],
+    frontend: ["React", "Next.js", "HTML", "Nest.js"],
+    backend: ["Node.js", "Express", "NestJS", "Laravel"],
     databases: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis"],
-    cloud: ["AWS", "Google Cloud", "Azure", "Netlify", "Vercel"],
-    tools: ["Docker", "Kubernetes", "Git", "Postman", "VS Code"]
+    cloud: ["Google Cloud", "Azure", "Netlify", "Vercel"],
+    tools: ["Docker", "Git", "Postman", "VS Code"]
   },
   architecture: ["Microservices", "Serverless", "JAMstack", "Progressive Web Apps"],
   currentlyLearning: ["GraphQL", "Rust", "Web3", "AI/ML Integration"],
   askMeAbout: ["Web Development", "System Design", "Open Source", "Tech Career"],
   funFacts: [
-    "🎲 Can solve Rubik's cube in under 2 minutes",
-    "☕ Powered by coffee and curiosity",
-    "🌱 Always learning something new",
-    "🎮 Gaming enthusiast in free time"
+    "🎮 Gaming: PS5 and PC games, especially action and adventure titles",
+    "📚 Reading: Horror, action, and adventure genres",
+    "🏃‍♂️ Fitness: Gym enthusiast, focused on strength and endurance"
   ],
   goals2024: [
     "🚀 Launch 3 major open source projects",
     "📚 Master cloud-native development",
     "🤝 Mentor 50+ developers",
     "✍️ Write 52 technical articles"
-  ]
 };
 
 console.log("Welcome to my GitHub profile! 🎉");
@@ -99,8 +97,8 @@ console.log("Welcome to my GitHub profile! 🎉");
 ### 🎨 Frontend Development
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![HTML](https://img.shields.io/badge/HTML-35495E?style=for-the-badge&logo=HTML&logoColor=4FC08D)
+![Nest.js](https://img.shields.io/badge/Nest.js-DD0031?style=for-the-badge&logo=Nest.js&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
@@ -108,7 +106,6 @@ console.log("Welcome to my GitHub profile! 🎉");
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 
@@ -117,12 +114,10 @@ console.log("Welcome to my GitHub profile! 🎉");
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 
 ### 🔧 DevOps & Tools
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326ce5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
@@ -158,91 +153,9 @@ console.log("Welcome to my GitHub profile! 🎉");
 
 ## 🌟 Featured Projects
 
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-
-### 🏪 Shop Financial Management Tool
-**A comprehensive financial dashboard for small businesses**
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-
-**Features:**
-- 📊 Real-time analytics dashboard
-- 💰 Revenue & expense tracking
-- 📈 Financial forecasting
-- 🔐 Secure authentication
-
-**Status:** 🚧 In Development
-
-</td>
-<td width="50%">
-
-### 🌐 Personal Portfolio
-**Modern, responsive portfolio showcasing my work**
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
-
-**Features:**
-- ⚡ Lightning-fast performance
-- 🎨 Stunning animations
-- 📱 Fully responsive design
-- 🌙 Dark/Light mode toggle
-
-**Status:** ✅ [Live Demo](https://qadirdadkazi.netlify.app/)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 📋 Task Management Platform
-**Collaborative task management with real-time updates**
-
-![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socket.io&logoColor=white)
-
-**Features:**
-- 🔄 Real-time collaboration
-- 📊 Project analytics
-- 👥 Team management
-- 📱 Mobile responsive
-
-**Status:** ✅ Completed
-
-</td>
-<td width="50%">
-
-### 🛒 E-Commerce Platform
-**Full-stack e-commerce solution with payment integration**
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=flat-square&logo=stripe&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
-
-**Features:**
-- 💳 Secure payment processing
-- 📦 Inventory management
-- 🔍 Advanced search & filters
-- 📊 Sales analytics
-
-**Status:** 🚧 In Development
-
-</td>
-</tr>
-</table>
-
-</div>
+<!-- FEATURED_PROJECTS -->
+Loading featured projects...
+<!-- END_FEATURED_PROJECTS -->
 
 ---
 
@@ -259,10 +172,9 @@ console.log("Welcome to my GitHub profile! 🎉");
 <br><br>
 <strong>🏗️ Infrastructure Focus</strong><br><br>
 <div style="color: #333; background: white; padding: 10px; border-radius: 5px; margin: 10px 0;">
-• Advanced AWS & Docker<br>
+• Advanced Google Cloud & Docker<br>
 • Microservices Design<br>
 • DevOps Mastery<br>
-• Kubernetes Orchestration
 </div>
 </td>
 <td align="center" width="25%" style="background: linear-gradient(135deg, #4ecdc4, #6ee6de); color: white; padding: 20px; border-radius: 10px;">
@@ -277,11 +189,11 @@ console.log("Welcome to my GitHub profile! 🎉");
 </div>
 </td>
 <td align="center" width="25%" style="background: linear-gradient(135deg, #45b7d1, #6cc5e0); color: white; padding: 20px; border-radius: 10px;">
-<img src="https://img.shields.io/badge/Q3-Build%20SaaS%20Platform-45b7d1?style=for-the-badge&logoColor=white" />
+<img src="https://img.shields.io/badge/Q3-Build%20Platform-45b7d1?style=for-the-badge&logoColor=white" />
 <br><br>
 <strong>💼 Business Development</strong><br><br>
 <div style="color: #333; background: white; padding: 10px; border-radius: 5px; margin: 10px 0;">
-• Financial Tools SaaS<br>
+• Financial Tools<br>
 • User Analytics<br>
 • Payment Integration<br>
 • Scalable Architecture
@@ -323,7 +235,7 @@ console.log("Welcome to my GitHub profile! 🎉");
 
 ### 🔨 Currently Building
 <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-top: 10px;">
-• <strong>Financial Management SaaS</strong><br>
+• <strong>Financial Management Platform</strong><br>
 • <strong>Developer Tools & CLI</strong><br>
 • <strong>Open Source Libraries</strong><br>
 • <strong>Technical Blog Platform</strong><br>
@@ -388,98 +300,11 @@ console.log("Welcome to my GitHub profile! 🎉");
 
 ---
 
-## 💭 Latest Blog Posts & Thoughts
-
-<div align="center">
-
-### 📝 Recent Technical Articles
-
-<table>
-<tr>
-<td width="50%">
-
-#### 🚀 Building Scalable React Applications
-*Published on Dev.to • 5 min read*
-
-**Key Topics:**
-- Component Architecture Patterns
-- State Management Best Practices
-- Performance Optimization Techniques
-- Testing Strategies
-
-<img src="https://img.shields.io/badge/React-Advanced-blue?style=flat-square&logo=react" />
-<img src="https://img.shields.io/badge/Architecture-Scalable-green?style=flat-square" />
-
-[Read Article →](https://dev.to/qadirdadkazi)
-
-</td>
-<td width="50%">
-
-#### ⚡ Node.js Performance Optimization
-*Published on Medium • 8 min read*
-
-**Key Topics:**
-- Memory Management
-- Async/Await Best Practices
-- Database Query Optimization
-- Caching Strategies
-
-<img src="https://img.shields.io/badge/Node.js-Performance-green?style=flat-square&logo=node.js" />
-<img src="https://img.shields.io/badge/Backend-Optimization-orange?style=flat-square" />
-
-[Read Article →](https://medium.com/@qadirdadkazi)
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-#### 🔐 Modern Authentication Patterns
-*Published on Hashnode • 6 min read*
-
-**Key Topics:**
-- JWT vs Session-based Auth
-- OAuth 2.0 Implementation
-- Security Best Practices
-- Multi-factor Authentication
-
-<img src="https://img.shields.io/badge/Security-Authentication-red?style=flat-square&logo=shield" />
-<img src="https://img.shields.io/badge/OAuth-Implementation-purple?style=flat-square" />
-
-[Read Article →](https://hashnode.com/@qadirdadkazi)
-
-</td>
-<td width="50%">
-
-#### 🌐 Full-Stack Development in 2024
-*Published on Personal Blog • 10 min read*
-
-**Key Topics:**
-- Technology Trends
-- Framework Comparisons
-- Development Workflows
-- Future Predictions
-
-<img src="https://img.shields.io/badge/Full--Stack-2024-blue?style=flat-square&logo=code" />
-<img src="https://img.shields.io/badge/Trends-Technology-teal?style=flat-square" />
-
-[Read Article →](https://qadirdadkazi.netlify.app/blog)
-
-</td>
-</tr>
-</table>
-
-### 💭 Quick Thoughts & Tips
-
-<div align="center">
-<img src="https://readme-quotes.vercel.app/api?type=horizontal&theme=radical&quote=Code%20is%20like%20humor.%20When%20you%20have%20to%20explain%20it,%20it's%20bad.&author=Cory%20House" alt="Programming Quote" />
-</div>
-
-</div>
-
----
-
 ## 🏆 Achievements & Recognition
+
+<!-- ACHIEVEMENTS -->
+Loading achievements...
+<!-- END_ACHIEVEMENTS -->
 
 <div align="center">
 
@@ -547,7 +372,6 @@ console.log("Welcome to my GitHub profile! 🎉");
 ### 🏅 Certifications & Badges
 
 <div align="center">
-<img src="https://img.shields.io/badge/AWS-Certified%20Developer-orange?style=for-the-badge&logo=amazon-aws" />
 <img src="https://img.shields.io/badge/Google%20Cloud-Professional-blue?style=for-the-badge&logo=google-cloud" />
 <img src="https://img.shields.io/badge/MongoDB-Certified%20Developer-green?style=for-the-badge&logo=mongodb" />
 <img src="https://img.shields.io/badge/Docker-Certified%20Associate-blue?style=for-the-badge&logo=docker" />

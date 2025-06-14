@@ -75,6 +75,64 @@ def get_daily_quote():
     data = r.json()
     return f'> {data["content"]}\n> — {data["author"]}'
 
+def get_featured_projects():
+    token = os.environ.get("GITHUB_TOKEN")
+    username = os.environ.get("GITHUB_USERNAME") or os.getenv("GITHUB_REPOSITORY", "/").split('/')[0]
+    headers = {"Authorization": f"token {token}"}
+    # Get pinned repos using GitHub GraphQL API
+    query = '''
+    query($login: String!) {
+      user(login: $login) {
+        pinnedItems(first: 4, types: REPOSITORY) {
+          nodes {
+            ... on Repository {
+              name
+              description
+              url
+              stargazerCount
+              forkCount
+              primaryLanguage { name color }
+            }
+          }
+        }
+      }
+    }
+    '''
+    variables = {"login": username}
+    r = requests.post(
+        "https://api.github.com/graphql",
+        json={"query": query, "variables": variables},
+        headers=headers
+    )
+    if r.status_code != 200 or not r.json().get("data"):
+        return "- Unable to fetch featured projects."
+    nodes = r.json()["data"]["user"]["pinnedItems"]["nodes"]
+    if not nodes:
+        return "- No featured projects found."
+    lines = []
+    for repo in nodes:
+        lang = repo["primaryLanguage"]["name"] if repo["primaryLanguage"] else ""
+        color = repo["primaryLanguage"]["color"] if repo["primaryLanguage"] else "#ccc"
+        lines.append(f"- [{repo['name']}]({repo['url']}): {repo['description'] or ''} ⭐{repo['stargazerCount']} 🍴{repo['forkCount']} <span style='color:{color}'>● {lang}</span>")
+    return '\n'.join(lines)
+
+def get_achievements():
+    token = os.environ.get("GITHUB_TOKEN")
+    username = os.environ.get("GITHUB_USERNAME") or os.getenv("GITHUB_REPOSITORY", "/").split('/')[0]
+    headers = {"Authorization": f"token {token}"}
+    url = f"https://api.github.com/users/{username}"
+    r = requests.get(url, headers=headers)
+    if r.status_code != 200:
+        return "- Unable to fetch achievements."
+    user = r.json()
+    lines = [
+        f"- 🏆 **Public Repos:** {user.get('public_repos', 0)}",
+        f"- 👥 **Followers:** {user.get('followers', 0)}",
+        f"- ⭐ **GitHub Stars:** {user.get('public_gists', 0)}",
+        f"- 🗓️ **GitHub Since:** {user.get('created_at', '')[:10]}"
+    ]
+    return '\n'.join(lines)
+
 def main():
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
@@ -82,6 +140,8 @@ def main():
     content = update_section(content, "LAST_UPDATED", get_last_updated())
     content = update_section(content, "RECENT_ACTIVITY", get_recent_activity())
     content = update_section(content, "DAILY_QUOTE", get_daily_quote())
+    content = update_section(content, "FEATURED_PROJECTS", get_featured_projects())
+    content = update_section(content, "ACHIEVEMENTS", get_achievements())
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
 

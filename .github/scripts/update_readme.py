@@ -45,8 +45,8 @@ def get_recent_activity():
     if repo_env:
         username = repo_env.split('/')[0]
     else:
-        username = ""
-    token = os.environ["GITHUB_TOKEN"]
+        username = os.environ.get("GITHUB_USERNAME", "")
+    token = os.environ.get("PERSONAL_ACCESS_TOKEN")
     headers = {"Authorization": f"token {token}"}
     url = f"https://api.github.com/users/{username}/events/public"
     r = requests.get(url, headers=headers)

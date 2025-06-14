@@ -94,11 +94,9 @@ console.log("Welcome to my GitHub profile! 🎉");
 
 ### 🎨 Frontend Development
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-35495E?style=for-the-badge&logo=HTML&logoColor=4FC08D)
 ![Nest.js](https://img.shields.io/badge/Nest.js-DD0031?style=for-the-badge&logo=Nest.js&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 ### ⚙️ Backend Development
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)

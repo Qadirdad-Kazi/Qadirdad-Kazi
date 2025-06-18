@@ -198,23 +198,81 @@
 -->
 ## 📊 GitHub Stats
 
-### GitHub Stats
-[![Qadirdad's GitHub Stats](https://github-readme-stats.vercel.app/api?username=qadirdad-kazi&show_icons=true&count_private=true&line_height=28&hide_border=true&title_color=00ffac&text_color=c9cacc&icon_color=4AB197&bg_color=1A1B27)](https://github.com/qadirdad-kazi/github-readme-stats)
+<!-- First Row: Stats and Streak -->
+<table>
+  <tr>
+    <!-- GitHub Stats -->
+    <td width="50%">
+      <h3 align="center">GitHub Stats</h3>
+      <a href="https://github.com/qadirdad-kazi/github-readme-stats">
+        <img 
+          src="https://github-readme-stats.vercel.app/api?username=qadirdad-kazi&show_icons=true&count_private=true&line_height=28&hide_border=true&title_color=00ffac&text_color=c9cacc&icon_color=4AB197&bg_color=1A1B27"
+          alt="GitHub Stats"
+          style="width: 100%; max-width: 100%;"
+        />
+      </a>
+    </td>
+    <!-- Streak Stats -->
+    <td width="50%">
+      <h3 align="center">Streak Stats</h3>
+      <a href="https://git.io/streak-stats">
+        <img 
+          src="https://streak-stats.demolab.com?user=qadirdad-kazi&hide_border=true&background=1A1B27&ring=00ffac&fire=00ffac&currStreakNum=00ffac&sideNums=00ffac&currStreakLabel=00ffac&sideLabels=00ffac&dates=00ffac&stroke=00ffac"
+          alt="GitHub Streak"
+          style="width: 100%; max-width: 100%;"
+        />
+      </a>
+    </td>
+  </tr>
+</table>
 
-### Streak Stats
-[![GitHub Streak](https://streak-stats.demolab.com?user=qadirdad-kazi&hide_border=true&background=1A1B27&ring=00ffac&fire=00ffac&currStreakNum=00ffac&sideNums=00ffac&currStreakLabel=00ffac&sideLabels=00ffac&dates=00ffac&stroke=00ffac)](https://git.io/streak-stats)
+<!-- Second Row: Languages and Trophies -->
+<table>
+  <tr>
+    <!-- Top Languages -->
+    <td width="50%">
+      <h3 align="center">Top Languages</h3>
+      <a href="https://github.com/qadirdad-kazi/github-readme-stats">
+        <img 
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=qadirdad-kazi&layout=compact&langs_count=8&hide_border=true&title_color=00ffac&text_color=c9cacc&bg_color=1A1B27"
+          alt="Top Languages"
+          style="width: 100%; max-width: 100%;"
+        />
+      </a>
+    </td>
+    <!-- GitHub Trophies -->
+    <td width="50%">
+      <h3 align="center">GitHub Trophies</h3>
+      <a href="https://github.com/ryo-ma/github-profile-trophy">
+        <img 
+          src="https://github-profile-trophy.vercel.app/?username=qadirdad-kazi&margin-w=15&margin-h=15&no-bg=true&no-frame=true&theme=onestar&column=4"
+          alt="GitHub Trophies"
+          style="width: 100%; max-width: 100%;"
+        />
+      </a>
+    </td>
+  </tr>
+</table>
 
-### Top Languages
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=qadirdad-kazi&layout=compact&langs_count=8&hide_border=true&title_color=00ffac&text_color=c9cacc&bg_color=1A1B27)](https://github.com/qadirdad-kazi/github-readme-stats)
+<!-- Full Width: Contribution Graph -->
+<h3 align="center">📈 Contribution Activity</h3>
+<a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+  <img 
+    src="https://github-readme-activity-graph.vercel.app/graph?username=qadirdad-kazi&theme=react-dark&bg_color=1A1B27&hide_border=true&color=00ffac&line=00ffac&point=00ffac&area=true"
+    alt="Contribution Graph"
+    style="width: 100%; max-width: 100%;"
+  />
+</a>
 
-### GitHub Trophies
-[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=qadirdad-kazi&margin-w=15&margin-h=15&no-bg=true&no-frame=true&theme=onestar&column=4)](https://github.com/ryo-ma/github-profile-trophy)
-
-### 📈 Contribution Activity
-[![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=qadirdad-kazi&theme=react-dark&bg_color=1A1B27&hide_border=true&color=00ffac&line=00ffac&point=00ffac&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-### Weekly Development Breakdown
-[![Coding Activity](https://github-readme-stats.vercel.app/api/wakatime?username=qadirdadkazi&layout=compact&langs_count=8&hide_border=true&title_color=00ffac&text_color=c9cacc&bg_color=1A1B27)](https://wakatime.com/)
+<!-- Full Width: WakaTime Stats -->
+<h3 align="center" style="margin-top: 20px;">Weekly Development Breakdown</h3>
+<a href="https://wakatime.com/">
+  <img 
+    src="https://github-readme-stats.vercel.app/api/wakatime?username=qadirdadkazi&layout=compact&langs_count=8&hide_border=true&title_color=00ffac&text_color=c9cacc&bg_color=1A1B27"
+    alt="Coding Activity"
+    style="width: 100%; max-width: 100%;"
+  />
+</a>
 
 ---
 

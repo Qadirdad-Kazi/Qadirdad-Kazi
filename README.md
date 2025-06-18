@@ -33,7 +33,9 @@
 <div align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 25px 0;">
   
   <!-- Learning Card -->
-  <div style="background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%); padding: 20px; border-radius: 12px; color: white; text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)'" 
+       onmouseout="this.style.transform='';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
+       style="background: linear-gradient(135deg, #6e8efb 0%, #a777e3 100%); padding: 20px; border-radius: 12px; color: white; text-align: left; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
     <div style="font-size: 24px; margin-bottom: 15px; display: flex; align-items: center;">
       <span style="margin-right: 10px;">🧠</span>
       <h3 style="margin: 0; font-size: 1.1em;">Learning</h3>
@@ -42,7 +44,9 @@
   </div>
 
   <!-- Building Card -->
-  <div style="background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%); padding: 20px; border-radius: 12px; color: white; text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)'" 
+       onmouseout="this.style.transform='';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
+       style="background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%); padding: 20px; border-radius: 12px; color: white; text-align: left; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
     <div style="font-size: 24px; margin-bottom: 15px; display: flex; align-items: center;">
       <span style="margin-right: 10px;">🚀</span>
       <h3 style="margin: 0; font-size: 1.1em;">Building</h3>
@@ -51,7 +55,9 @@
   </div>
 
   <!-- Writing Card -->
-  <div style="background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%); padding: 20px; border-radius: 12px; color: white; text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)'" 
+       onmouseout="this.style.transform='';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
+       style="background: linear-gradient(135deg, #ff9966 0%, #ff5e62 100%); padding: 20px; border-radius: 12px; color: white; text-align: left; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
     <div style="font-size: 24px; margin-bottom: 15px; display: flex; align-items: center;">
       <span style="margin-right: 10px;">✍️</span>
       <h3 style="margin: 0; font-size: 1.1em;">Writing</h3>
@@ -60,7 +66,9 @@
   </div>
 
   <!-- Community Card -->
-  <div style="background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%); padding: 20px; border-radius: 12px; color: white; text-align: left; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 10px 25px rgba(0,0,0,0.2)'" 
+       onmouseout="this.style.transform='';this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)'"
+       style="background: linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%); padding: 20px; border-radius: 12px; color: white; text-align: left; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
     <div style="font-size: 24px; margin-bottom: 15px; display: flex; align-items: center;">
       <span style="margin-right: 10px;">🤝</span>
       <h3 style="margin: 0; font-size: 1.1em;">Community</h3>
@@ -69,28 +77,7 @@
   </div>
 </div>
 
-<style>
-  /* Hover effects for cards */
-  @media (hover: hover) {
-    div[style*="gradient"]:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important;
-    }
-  }
-  
-  /* Responsive grid */
-  @media (max-width: 768px) {
-    div[style*="grid-template-columns"] {
-      grid-template-columns: 1fr 1fr !important;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    div[style*="grid-template-columns"] {
-      grid-template-columns: 1fr !important;
-    }
-  }
-</style>
+<!-- Responsive behavior is handled by the grid's auto-fit and minmax properties -->
 
 ---
 

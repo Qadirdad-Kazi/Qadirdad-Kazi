@@ -20,11 +20,55 @@
 
 ## 👨‍💻 About Me
 
-- 🔭 I’m currently building full-stack apps using the MERN stack + Nest.js  
-- 🌟 Passionate about clean UI, fast APIs, and impactful products  
-- 📚 Constantly learning and exploring new technologies  
-- 💼 Open to freelance & full-time opportunities  
-- 🔗 Portfolio: [qadirdadkazi.netlify.app](https://qadirdadkazi.netlify.app)
+<div style="background: linear-gradient(145deg, #f6f8ff 0%, #f0f4ff 100%); border-radius: 12px; padding: 25px; margin: 20px 0; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+  <div style="display: flex; flex-direction: column; gap: 15px;">
+    <div style="display: flex; align-items: flex-start; gap: 15px;">
+      <div style="background: #e3f2fd; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <span style="font-size: 20px;">👨‍💻</span>
+      </div>
+      <div>
+        <h3 style="margin: 0 0 5px 0; color: #1a237e; font-size: 1.1em;">Full-Stack Developer</h3>
+        <p style="margin: 0; color: #37474f; line-height: 1.6;">Building robust and scalable web applications with modern technologies</p>
+      </div>
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 15px;">
+      <div style="background: #e8f5e9; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <span style="font-size: 20px;">🔧</span>
+      </div>
+      <div>
+        <h3 style="margin: 0 0 5px 0; color: #1a237e; font-size: 1.1em;">Technical Stack</h3>
+        <p style="margin: 0; color: #37474f; line-height: 1.6;">MERN Stack, Nest.js, TypeScript, and modern web technologies</p>
+      </div>
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 15px;">
+      <div style="background: #fff3e0; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <span style="font-size: 20px;">💡</span>
+      </div>
+      <div>
+        <h3 style="margin: 0 0 5px 0; color: #1a237e; font-size: 1.1em;">Passion</h3>
+        <p style="margin: 0; color: #37474f; line-height: 1.6;">Creating clean, efficient, and impactful digital experiences</p>
+      </div>
+    </div>
+    
+    <div style="display: flex; align-items: flex-start; gap: 15px;">
+      <div style="background: #f3e5f5; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <span style="font-size: 20px;">🚀</span>
+      </div>
+      <div>
+        <h3 style="margin: 0 0 5px 0; color: #1a237e; font-size: 1.1em;">Currently</h3>
+        <p style="margin: 0; color: #37474f; line-height: 1.6;">Open to new opportunities and collaborations</p>
+      </div>
+    </div>
+    
+    <div style="margin-top: 15px; text-align: center;">
+      <a href="https://qadirdadkazi.netlify.app" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #4a6cf7 0%, #2541b2 100%); color: white; padding: 10px 25px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(74, 108, 247, 0.3);">
+        View My Portfolio
+      </a>
+    </div>
+  </div>
+</div>
 
 ---
 

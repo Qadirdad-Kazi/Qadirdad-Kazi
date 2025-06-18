@@ -130,19 +130,33 @@
 
 ## 🔗 Connect With Me
 
-<p align="left">
-  <a href="https://linkedin.com/in/qadirdad-kazi" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+<div align="center" style="margin: 20px 0;">
+  <a href="https://linkedin.com/in/qadirdad-kazi" target="_blank" style="margin: 0 8px; display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 40px; border-radius: 6px; background-color: #0077B5; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" width="20" height="20" style="margin-right: 8px;" /> LinkedIn
   </a>
-  <a href="https://twitter.com/qadirdad_kazi" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  
+  <a href="https://twitter.com/qadirdad_kazi" target="_blank" style="margin: 0 8px; display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 40px; border-radius: 6px; background-color: #1DA1F2; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/twitter.svg" width="20" height="20" style="margin-right: 8px;" /> Twitter
   </a>
-  <a href="https://instagram.com/qadirdad__" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  
+  <a href="https://github.com/qadirdad-kazi" target="_blank" style="margin: 0 8px; display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 40px; border-radius: 6px; background-color: #333; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" width="20" height="20" style="margin-right: 8px;" /> GitHub
   </a>
-  <a href="mailto:qadirdadkazi@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  
+  <a href="https://instagram.com/qadirdad__" target="_blank" style="margin: 0 8px; display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 40px; border-radius: 6px; background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" width="20" height="20" style="margin-right: 8px;" /> Instagram
   </a>
+  
+  <a href="mailto:qadirdadkazi@gmail.com" style="margin: 0 8px; display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 40px; border-radius: 6px; background-color: #D44638; color: white; text-decoration: none; font-weight: 600; transition: all 0.3s ease;">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" width="20" height="20" style="margin-right: 8px;" /> Email
+  </a>
+</div>
+
+<div align="center" style="margin: 15px 0 0 0;">
+  <a href="https://qadirdadkazi.netlify.app/" target="_blank" style="margin: 0 8px; display: inline-flex; align-items: center; justify-content: center; width: 200px; height: 40px; border-radius: 6px; background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%); color: #333; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/netlify.svg" width="20" height="20" style="margin-right: 8px;" /> Visit My Portfolio
+  </a>
+</div>
 </p>
 
 ---

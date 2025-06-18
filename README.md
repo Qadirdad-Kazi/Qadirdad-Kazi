@@ -198,42 +198,23 @@
 -->
 ## 📊 GitHub Stats
 
-<div align="center" style="margin: 30px 0;">
-  
-  <!-- Stats and Streak Cards -->
-  <div align="center">
-    
-    <!-- GitHub Stats Card -->
-    [![Qadirdad's GitHub Stats](https://github-readme-stats.vercel.app/api?username=qadirdad-kazi&show_icons=true&count_private=true&line_height=28&hide_border=true&title_color=00ffac&text_color=c9cacc&icon_color=4AB197&bg_color=1A1B27)](https://github.com/qadirdad-kazi/github-readme-stats)
-    
-    <!-- Streak Stats Card -->
-    [![GitHub Streak](https://streak-stats.demolab.com?user=qadirdad-kazi&hide_border=true&background=1A1B27&ring=00ffac&fire=00ffac&currStreakNum=00ffac&sideNums=00ffac&currStreakLabel=00ffac&sideLabels=00ffac&dates=00ffac&stroke=00ffac)](https://git.io/streak-stats)
-    
-  </div>
-  
-  <!-- Top Languages and Trophies -->
-  <div align="center" style="margin: 30px 0;">
-    
-    <!-- Top Languages Card -->
-    [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=qadirdad-kazi&layout=compact&langs_count=8&hide_border=true&title_color=00ffac&text_color=c9cacc&bg_color=1A1B27)](https://github.com/qadirdad-kazi/github-readme-stats)
-    
-    <!-- GitHub Trophies -->
-    [![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=qadirdad-kazi&margin-w=15&margin-h=15&no-bg=true&no-frame=true&theme=onestar&column=4)](https://github.com/ryo-ma/github-profile-trophy)
-    
-  </div>
-  
-  <!-- Contribution Graph -->
-  <div style="margin: 30px 0;">
-    <h3 align="center" style="color: #00ffac;">📈 Contribution Activity</h3>
-    [![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=qadirdad-kazi&theme=react-dark&bg_color=1A1B27&hide_border=true&color=00ffac&line=00ffac&point=00ffac&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-  </div>
-  
-  <!-- WakaTime Stats -->
-  <div align="center">
-    [![Coding Activity](https://github-readme-stats.vercel.app/api/wakatime?username=qadirdadkazi&layout=compact&langs_count=8&hide_border=true&title_color=00ffac&text_color=c9cacc&bg_color=1A1B27)](https://wakatime.com/)
-  </div>
-  
-</div>
+### GitHub Stats
+[![Qadirdad's GitHub Stats](https://github-readme-stats.vercel.app/api?username=qadirdad-kazi&show_icons=true&count_private=true&line_height=28&hide_border=true&title_color=00ffac&text_color=c9cacc&icon_color=4AB197&bg_color=1A1B27)](https://github.com/qadirdad-kazi/github-readme-stats)
+
+### Streak Stats
+[![GitHub Streak](https://streak-stats.demolab.com?user=qadirdad-kazi&hide_border=true&background=1A1B27&ring=00ffac&fire=00ffac&currStreakNum=00ffac&sideNums=00ffac&currStreakLabel=00ffac&sideLabels=00ffac&dates=00ffac&stroke=00ffac)](https://git.io/streak-stats)
+
+### Top Languages
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=qadirdad-kazi&layout=compact&langs_count=8&hide_border=true&title_color=00ffac&text_color=c9cacc&bg_color=1A1B27)](https://github.com/qadirdad-kazi/github-readme-stats)
+
+### GitHub Trophies
+[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=qadirdad-kazi&margin-w=15&margin-h=15&no-bg=true&no-frame=true&theme=onestar&column=4)](https://github.com/ryo-ma/github-profile-trophy)
+
+### 📈 Contribution Activity
+[![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=qadirdad-kazi&theme=react-dark&bg_color=1A1B27&hide_border=true&color=00ffac&line=00ffac&point=00ffac&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+### Weekly Development Breakdown
+[![Coding Activity](https://github-readme-stats.vercel.app/api/wakatime?username=qadirdadkazi&layout=compact&langs_count=8&hide_border=true&title_color=00ffac&text_color=c9cacc&bg_color=1A1B27)](https://wakatime.com/)
 
 ---
 

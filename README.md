@@ -309,6 +309,21 @@
 
 ---
 
+## 🧩 Interactive Elements
+
+| Feature | Preview / Link |
+| ------- | -------------- |
+| Portfolio Live Demo | [![Open Portfolio](https://img.shields.io/badge/Portfolio-Live-green?style=for-the-badge&logo=netlify)](https://qadirdadkazi.netlify.app) |
+| Runnable Code Snippets | [![CodeSandbox](https://img.shields.io/badge/Run%20on-CodeSandbox-black?style=for-the-badge&logo=codesandbox)](https://codesandbox.io/u/qadirdadkazi) |
+| Terminal Simulation | [![Terminal Demo](https://img.shields.io/badge/Terminal-Demo-lightgrey?style=for-the-badge&logo=gnubash)](https://asciinema.org/) |
+| 3D GitHub Skyline | [![Skyline](https://img.shields.io/badge/3D%20Skyline-View-blueviolet?style=for-the-badge)](https://skyline.github.com/qadirdad-kazi/2024) |
+| Time Zone Clock | ![Time Badge](https://img.shields.io/badge/Time-PKT-blue?style=for-the-badge) |
+| "Click to see demo" GIF | ![Demo GIF](https://github.com/qadirdad-kazi/qadirdad-kazi/raw/main/assets/demo-overlay.gif) |
+
+> **ℹ️** GitHub strips inline scripts, so truly interactive widgets must be rendered as images, GIFs, or external links. Replace the placeholder links/GIFs above with your own assets.
+
+---
+
 ## 💡 Fun Fact
 
 <p align="center">

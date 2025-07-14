@@ -64,7 +64,7 @@
       <h3 style="margin: 0; font-size: 1.1em;">Opportunities</h3>
     </div>
     <p style="margin: 0; opacity: 0.9; font-size: 0.95em;">Open to freelance & full-time opportunities</p>
-    <a href="https://qadirdadkazi.netlify.app" target="_blank" style="display: inline-block; margin-top: 10px; color: white; font-weight: 600; text-decoration: none; font-size: 0.9em;">
+    <a href="https://qadirdadkazi.com" target="_blank" style="display: inline-block; margin-top: 10px; color: white; font-weight: 600; text-decoration: none; font-size: 0.9em;">
       View Portfolio →
     </a>
   </div>
@@ -301,7 +301,7 @@
 </div>
 
 <div align="center" style="margin: 15px 0 0 0;">
-  <a href="https://qadirdadkazi.netlify.app/" target="_blank" style="margin: 0 8px; display: inline-flex; align-items: center; justify-content: center; width: 200px; height: 40px; border-radius: 6px; background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%); color: #333; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <a href="https://qadirdadkazi.com/" target="_blank" style="margin: 0 8px; display: inline-flex; align-items: center; justify-content: center; width: 200px; height: 40px; border-radius: 6px; background: linear-gradient(135deg, #00C9FF 0%, #92FE9D 100%); color: #333; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/netlify.svg" width="20" height="20" style="margin-right: 8px;" /> Visit My Portfolio
   </a>
 </div>
@@ -321,7 +321,7 @@
 
 
 <p align="center">
-  <a href="https://qadirdadkazi.netlify.app/" target="_blank">
+  <a href="https://qadirdadkazi.com/" target="_blank">
     <img src="https://img.shields.io/badge/Visit-My%20Portfolio-4c1" alt="Portfolio" />
   </a>
 </p>

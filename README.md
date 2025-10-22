@@ -148,16 +148,10 @@ const qadirdad = {
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=qadirdad-kazi&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="Contribution Graph" width="95%" />
 </p>
 
-### 🐍 Watch My Contributions Get Eaten!
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake.svg" alt="Snake animation" />
-</p>
-
 ### 📅 Contribution Calendar
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/2ea44f/qadirdad-kazi" alt="GitHub Contribution Chart" width="95%" />
+  <img src="https://ghchart.rshah.org/7aa2f7/qadirdad-kazi" alt="GitHub Contribution Chart" width="95%" />
 </p>
 
 </div>

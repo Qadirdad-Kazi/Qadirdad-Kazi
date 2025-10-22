@@ -30,69 +30,23 @@
 
 ## 👨‍💻 About Me
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="400" alt="Coding GIF" />
-  </div>
-
-<br/>
-
-<table align="center">
-<tr>
-<td width="50%" valign="top">
+<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
 
 ```typescript
 const qadirdad = {
     location: "Pakistan 🇵🇰",
     role: "Full Stack Developer",
     technologies: {
-        frontEnd: [
-            "React", 
-            "Next.js", 
-            "Redux", 
-            "Tailwind CSS"
-        ],
-        backEnd: [
-            "Node.js", 
-            "Express", 
-            "NestJS", 
-            "Laravel"
-        ],
-        databases: [
-            "MongoDB", 
-            "PostgreSQL", 
-            "MySQL", 
-            "Redis"
-        ]
-    }
+        frontEnd: ["React", "Next.js", "Redux", "Tailwind CSS"],
+        backEnd: ["Node.js", "Express", "NestJS", "Laravel"],
+        databases: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
+        tools: ["Docker", "Git", "Postman", "Figma"]
+    },
+    currentFocus: ["NestJS", "Cloud Architecture", "Microservices"],
+    openTo: ["Freelance Projects", "Full-Time Opportunities", "Collaborations"],
+    portfolio: "qadirdadkazi.com"
 };
 ```
-
-</td>
-<td width="50%" valign="top">
-
-```typescript
-const currentlyDoing = {
-    focus: [
-        "NestJS ⚡",
-        "Cloud Architecture ☁️",
-        "Microservices 🔧"
-    ],
-    building: [
-        "Financial Analytics Platform",
-        "Open Source Projects"
-    ],
-    openTo: [
-        "💼 Freelance Projects",
-        "🏢 Full-Time Opportunities",
-        "🤝 Collaborations"
-    ],
-    contact: "qadirdadkazi.com"
-};
-```
-
-</td>
-</tr>
-</table>
 
 <br clear="both">
 

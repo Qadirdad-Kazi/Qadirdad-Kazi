@@ -30,23 +30,69 @@
 
 ## 👨‍💻 About Me
 
-<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="400" alt="Coding GIF" />
+  </div>
+
+<br/>
+
+<table align="center">
+<tr>
+<td width="50%" valign="top">
 
 ```typescript
 const qadirdad = {
     location: "Pakistan 🇵🇰",
     role: "Full Stack Developer",
     technologies: {
-        frontEnd: ["React", "Next.js", "Redux", "Tailwind CSS"],
-        backEnd: ["Node.js", "Express", "NestJS", "Laravel"],
-        databases: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
-        tools: ["Docker", "Git", "Postman", "Figma"]
-    },
-    currentFocus: ["NestJS", "Cloud Architecture", "Microservices"],
-    openTo: ["Freelance Projects", "Full-Time Opportunities", "Collaborations"],
-    portfolio: "qadirdadkazi.com"
+        frontEnd: [
+            "React", 
+            "Next.js", 
+            "Redux", 
+            "Tailwind CSS"
+        ],
+        backEnd: [
+            "Node.js", 
+            "Express", 
+            "NestJS", 
+            "Laravel"
+        ],
+        databases: [
+            "MongoDB", 
+            "PostgreSQL", 
+            "MySQL", 
+            "Redis"
+        ]
+    }
 };
 ```
+
+</td>
+<td width="50%" valign="top">
+
+```typescript
+const currentlyDoing = {
+    focus: [
+        "NestJS ⚡",
+        "Cloud Architecture ☁️",
+        "Microservices 🔧"
+    ],
+    building: [
+        "Financial Analytics Platform",
+        "Open Source Projects"
+    ],
+    openTo: [
+        "💼 Freelance Projects",
+        "🏢 Full-Time Opportunities",
+        "🤝 Collaborations"
+    ],
+    contact: "qadirdadkazi.com"
+};
+```
+
+</td>
+</tr>
+</table>
 
 <br clear="both">
 
@@ -62,9 +108,9 @@ const qadirdad = {
 
 ## 🚀 What I'm Working On
 
-<table>
+<table width="100%">
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
 ### 📊 Current Projects
 - 💰 **Financial Analytics Platform**  
@@ -74,7 +120,7 @@ const qadirdad = {
   *Giving back to the community*
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
 ### 📚 Learning Journey
 - 🎓 **Microservices Architecture**  
@@ -151,19 +197,19 @@ const qadirdad = {
 ### 🐍 Contribution Snake
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake.svg">
+    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake.svg">
+  </picture>
 </p>
 
-### 📅 3D Contribution Calendar
+> **Note:** Snake animation requires GitHub Actions setup. See setup instructions below.
+
+### 🌍 Visitor Stats
 
 <p align="center">
-  <img src="https://ghchart.rshah.org/2ea44f/qadirdad-kazi" alt="GitHub Contribution Chart" width="95%" />
-</p>
-
-### 🌍 Where My Visitors Are From
-
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=qadirdad-kazi&label=Total%20Profile%20Visits&color=12&icon=5&pretty=true" alt="Visit Count" />
+  <img src="https://profile-counter.glitch.me/qadirdad-kazi/count.svg" alt="Visitor Count" />
 </p>
 
 </div>
@@ -244,5 +290,31 @@ Open to interesting partnerships
 <p align="center">
   <i>⭐️ From <a href="https://github.com/qadirdad-kazi">Qadirdad Kazi</a> with 💙</i>
 </p>
+
+---
+
+<details>
+<summary><b>🐍 How to Enable Snake Animation</b></summary>
+
+### Setup Instructions:
+
+1. **Create the workflow file** (already included in `.github/workflows/snake.yml`)
+
+2. **Enable GitHub Actions:**
+   - Go to your repository **Settings**
+   - Navigate to **Actions** → **General**
+   - Under "Workflow permissions", select **Read and write permissions**
+   - Click **Save**
+
+3. **Run the workflow:**
+   - Go to **Actions** tab
+   - Click **Generate Snake Animation**
+   - Click **Run workflow** → **Run workflow**
+
+4. **Wait** 1-2 minutes for the snake to be generated!
+
+The snake will automatically update every 12 hours. If you want to remove it, just delete the "🐍 Contribution Snake" section from the README.
+
+</details>
 
 

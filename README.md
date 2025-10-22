@@ -108,9 +108,9 @@ const currentlyDoing = {
 
 ## 🚀 What I'm Working On
 
-<table width="100%">
+<table>
 <tr>
-<td width="50%" valign="top">
+<td width="50%">
 
 ### 📊 Current Projects
 - 💰 **Financial Analytics Platform**  
@@ -120,7 +120,7 @@ const currentlyDoing = {
   *Giving back to the community*
 
 </td>
-<td width="50%" valign="top">
+<td width="50%">
 
 ### 📚 Learning Journey
 - 🎓 **Microservices Architecture**  
@@ -197,19 +197,19 @@ const currentlyDoing = {
 ### 🐍 Contribution Snake
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake.svg">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake.svg">
-  </picture>
+  <img src="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 </p>
 
-> **Note:** Snake animation requires GitHub Actions setup. See setup instructions below.
-
-### 🌍 Visitor Stats
+### 📅 3D Contribution Calendar
 
 <p align="center">
-  <img src="https://profile-counter.glitch.me/qadirdad-kazi/count.svg" alt="Visitor Count" />
+  <img src="https://ghchart.rshah.org/2ea44f/qadirdad-kazi" alt="GitHub Contribution Chart" width="95%" />
+</p>
+
+### 🌍 Where My Visitors Are From
+
+<p align="center">
+  <img src="https://visitcount.itsvg.in/api?id=qadirdad-kazi&label=Total%20Profile%20Visits&color=12&icon=5&pretty=true" alt="Visit Count" />
 </p>
 
 </div>
@@ -290,31 +290,5 @@ Open to interesting partnerships
 <p align="center">
   <i>⭐️ From <a href="https://github.com/qadirdad-kazi">Qadirdad Kazi</a> with 💙</i>
 </p>
-
----
-
-<details>
-<summary><b>🐍 How to Enable Snake Animation</b></summary>
-
-### Setup Instructions:
-
-1. **Create the workflow file** (already included in `.github/workflows/snake.yml`)
-
-2. **Enable GitHub Actions:**
-   - Go to your repository **Settings**
-   - Navigate to **Actions** → **General**
-   - Under "Workflow permissions", select **Read and write permissions**
-   - Click **Save**
-
-3. **Run the workflow:**
-   - Go to **Actions** tab
-   - Click **Generate Snake Animation**
-   - Click **Run workflow** → **Run workflow**
-
-4. **Wait** 1-2 minutes for the snake to be generated!
-
-The snake will automatically update every 12 hours. If you want to remove it, just delete the "🐍 Contribution Snake" section from the README.
-
-</details>
 
 

@@ -156,7 +156,7 @@ const qadirdad = {
   <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-snake-dark.svg">
 </picture>
 
-### 📅 3D Contribution Calendar
+### 📅 Contribution Calendar
 
 <p align="center">
   <img src="https://ghchart.rshah.org/2ea44f/qadirdad-kazi" alt="GitHub Contribution Chart" width="95%" />
@@ -166,7 +166,7 @@ const qadirdad = {
 
 ---
 
-## 💡 Random Dev Quote
+## 💡 Dev Quote
 
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote" />

@@ -1,236 +1,125 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Qadirdad%20Kazi&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32" width="100%" />
-</p>
 
 <div align="center">
-  <img src="3.png" alt="Banner" width="90%" style="border-radius: 15px; margin: 20px 0;" />
+ 
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Qadirdad%20Kazi&fontSize=60&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Full%20Stack%20Web%20Developer&descSize=25&descAlignY=60" width="100%" alt="Header" />
+
+  <h1 align="center">Hi there 👋, I'm Qadirdad Kazi</h1>
+  
+  <p align="center">
+    <a href="https://git.io/typing-svg">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=500&lines=Building+Scalable+Web+Apps;MERN+Stack+%7C+NestJS+%7C+TypeScript;Cloud+Architecture+Enthusiast;Open+Source+Contributor" alt="Typing SVG" />
+    </a>
+  </p>
+
+  <p align="center">
+     <a href="https://qadirdadkazi.com" target="_blank">
+        <img src="https://img.shields.io/badge/Portfolio-Visit_Site-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
+    </a>
+    <a href="https://linkedin.com/in/qadirdad-kazi" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    </a>
+    <a href="mailto:qadirdadkazi@gmail.com">
+        <img src="https://img.shields.io/badge/Email-Contact_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    </a>
+  </p>
+  
+  <img src="https://komarev.com/ghpvc/?username=qadirdad-kazi&label=PROFILE+VIEWS&style=flat-square&color=blueviolet" alt="Profile Views" />
+
 </div>
 
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00BFFF&center=true&vCenter=true&width=940&lines=Hi+%F0%9F%91%8B%2C+I'm+Qadirdad+Kazi;Full+Stack+Developer+%F0%9F%9A%80;MERN+Stack+%7C+NestJS+%7C+TypeScript;Building+Scalable+Web+Applications+%F0%9F%92%BB" alt="Typing SVG" />
-</h1>
+---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/🇵🇰_Based_in-Pakistan-success?style=flat-square&labelColor=green" />
-  <img src="https://img.shields.io/badge/Focus-Full_Stack_Development-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/Status-Available_for_Hire-brightgreen?style=flat-square" />
-  <img src="https://komarev.com/ghpvc/?username=qadirdad-kazi&label=Profile%20Views&color=blueviolet&style=flat-square" />
-</p>
+<div align="center">
 
-<p align="center"> 
-  <a href="https://qadirdadkazi.com" target="_blank">
-    <img src="https://img.shields.io/badge/🌐_Portfolio-Visit_My_Website-FF6B6B?style=for-the-badge&labelColor=1a1a1a" alt="Portfolio" />
-  </a>
-  <a href="mailto:qadirdadkazi@gmail.com">
-    <img src="https://img.shields.io/badge/📧_Email-Let's_Connect-00D9FF?style=for-the-badge&labelColor=1a1a1a" alt="Email" />
-  </a>
-</p>
+### 👨‍💻 About Me
+
+<img align="right" alt="Coding" width="350" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif" style="border-radius: 10px;" />
+
+I'm a passionate **Full Stack Developer** from **Pakistan 🇵🇰**, specializing in building robust web applications using the MERN stack and NestJS. I love solving complex problems, designing scalable architectures, and contributing to open source.
+
+- 🔭 I’m currently working on a **Financial Analytics Platform**.
+- 🌱 I’m currently learning **Microservices** and **AWS Cloud Architecture**.
+- 👯 I’m looking to collaborate on **Open Source** and **Enterprise Web Apps**.
+- 💬 Ask me about **React, NestJS, TypeScript, and Docker.**
+
+<br clear="both"/>
+
+</div>
 
 ---
 
-## 👨‍💻 About Me
+### 🛠️ Technology Stack
 
-<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/abhisheknaiidu/abhisheknaiidu/master/code.gif">
+<div align="center">
 
-```typescript
-const qadirdad = {
-    location: "Pakistan 🇵🇰",
-    role: "Full Stack Developer",
-    technologies: {
-        frontEnd: ["React", "Next.js", "Redux", "Tailwind CSS"],
-        backEnd: ["Node.js", "Express", "NestJS", "Laravel"],
-        databases: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
-        tools: ["Docker", "Git", "Postman", "Figma"]
-    },
-    currentFocus: ["NestJS", "Cloud Architecture", "Microservices"],
-    openTo: ["Freelance Projects", "Full-Time Opportunities", "Collaborations"],
-    portfolio: "qadirdadkazi.com"
-};
-```
+| **Frontend** | **Backend** | **Database & Cloud** | **Tools** |
+|:---:|:---:|:---:|:---:|
+| ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) | ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) | ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) | ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) |
+| ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) | ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white) | ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) |
+| ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) | ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) | ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) | ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) |
+| ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) | ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white) | ![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white) | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
 
-<br clear="both">
-
-### 🎯 Quick Facts
-
-- 🔭 Currently building a **Financial Management Tool** for shop owners
-- 🌱 Mastering **NestJS**, **TypeScript** and **Cloud Architecture**
-- 💼 Available for **Freelance Projects** and **Full-Time Positions**
-- ✍️ Writing tech articles and sharing knowledge with the community
-- 🤝 Always open to interesting projects and collaborations
+</div>
 
 ---
 
-## 🚀 What I'm Working On
+### 📊 GitHub Stats
 
-<table>
+<div align="center">
+
+<table style="border: none;">
 <tr>
-<td width="50%">
-
-### 📊 Current Projects
-- 💰 **Financial Analytics Platform**  
-  *Real-time reporting & insights for businesses*
-  
-- 🛠️ **Open Source Contributions**  
-  *Giving back to the community*
-
-</td>
-<td width="50%">
-
-### 📚 Learning Journey
-- 🎓 **Microservices Architecture**  
-  *Building scalable distributed systems*
-  
-- ☁️ **Cloud Technologies**  
-  *AWS, Docker, Kubernetes*
-
-</td>
+  <td align="center" style="border: none;">
+    <img src="https://github-readme-stats.vercel.app/api?username=qadirdad-kazi&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="Qadirdad's Github Stats" height="180"/>
+  </td>
+  <td align="center" style="border: none;">
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=qadirdad-kazi&theme=tokyonight&hide_border=true" alt="Qadirdad's Streak" height="180"/>
+  </td>
 </tr>
 </table>
 
----
-
-## 🛠️ Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,python,html,css,php,react,nextjs,redux,tailwind,bootstrap,materialui,nodejs,express,nestjs,laravel,graphql,mongodb,postgres,mysql,redis,firebase,git,docker,vscode,postman,figma,heroku,vercel,netlify&perline=10" alt="Tech Stack" />
-</p>
-
-<details>
-<summary><b>📂 View Detailed Stack</b></summary>
 <br/>
 
-**Languages:**  
-`JavaScript` • `TypeScript` • `Python` • `HTML5` • `CSS3` • `PHP`
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=qadirdad-kazi&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&card_width=600" alt="Top Langs" />
 
-**Frontend:**  
-`React` • `Next.js` • `Redux` • `Tailwind CSS` • `Bootstrap` • `Material-UI`
+<br/>
 
-**Backend:**  
-`Node.js` • `Express.js` • `NestJS` • `Laravel` • `GraphQL` • `REST APIs`
-
-**Databases:**  
-`MongoDB` • `PostgreSQL` • `MySQL` • `Redis` • `Firebase`
-
-**Tools & Platforms:**  
-`Git` • `Docker` • `VS Code` • `Postman` • `Figma` • `Heroku` • `Vercel` • `Netlify`
-
-</details>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  
-### 📈 Performance Overview
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=qadirdad-kazi&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" alt="GitHub Stats" height="170" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=qadirdad-kazi&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="170" />
-</p>
-
-### 💻 Most Used Languages
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=qadirdad-kazi&layout=compact&theme=tokyonight&hide_border=true&langs_count=10&card_width=445" alt="Top Languages" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=qadirdadkazi&layout=compact&theme=tokyonight&hide_border=true&card_width=445" alt="WakaTime Stats" height="170" />
-</p>
-
-### 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=qadirdad-kazi&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=7" alt="GitHub Trophies" />
-</p>
-
-### 📊 Contribution Graph
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=qadirdad-kazi&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" alt="Contribution Graph" width="95%" />
-</p>
-
-### 📅 Contribution Calendar
-
-<p align="center">
-  <img src="https://ghchart.rshah.org/7aa2f7/qadirdad-kazi" alt="GitHub Contribution Chart" width="95%" />
-</p>
+<!-- 3D Contribution Graph Placeholder - This will appear after the workflow runs -->
+<img src="profile-3d-contrib/profile-night-rainbow.svg" alt="3D Contribution Graph" width="100%" />
 
 </div>
 
 ---
 
-## 💡 Dev Quote
-
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Random Dev Quote" />
-</p>
-
----
-
-## 🔗 Connect With Me
-
-<p align="center">
-  <a href="https://linkedin.com/in/qadirdad-kazi" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://twitter.com/qadirdad_kazi" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-  </a>
-  <a href="https://instagram.com/qadirdad__" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
-  <a href="mailto:qadirdadkazi@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://qadirdadkazi.com" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
-  </a>
-</p>
-
----
+### 🏆 Trophies
 
 <div align="center">
-  
-### 💼 Open For Opportunities
+  <img src="https://github-profile-trophy.vercel.app/?username=qadirdad-kazi&theme=tokyonight&no-frame=true&no-bg=true&margin-w=15" alt="Trophies" />
+</div>
 
-<table>
-<tr>
-<td align="center" width="33%">
-  
-**💻 Freelance Projects**  
-Available for web development projects
+<br/>
 
-</td>
-<td align="center" width="33%">
-  
-**🏢 Full-Time Positions**  
-Seeking challenging opportunities
-
-</td>
-<td align="center" width="33%">
-  
-**🤝 Collaborations**  
-Open to interesting partnerships
-
-</td>
-</tr>
-</table>
-
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
 </div>
 
 ---
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=%F0%9F%92%A1+Turning+ideas+into+reality;%E2%9C%A8+One+line+of+code+at+a+time;%F0%9F%9A%80+Building+the+future+of+web" alt="Quote" />
-</p>
+<div align="center">
+    
+### 🤝 Let's Connect
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" />
+  <a href="https://twitter.com/qadirdad_kazi" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=flat&logo=twitter&logoColor=white" alt="Twitter"/></a>
+  <a href="https://instagram.com/qadirdad__" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  <a href="https://linkedin.com/in/qadirdad-kazi" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 </p>
 
----
+<p align="center">Made with 💙 by Qadirdad Kazi</p>
 
-<p align="center">
-  <i>⭐️ From <a href="https://github.com/qadirdad-kazi">Qadirdad Kazi</a> with 💙</i>
-</p>
+</div>
+
+
+
 
 

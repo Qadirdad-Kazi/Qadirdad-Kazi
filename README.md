@@ -69,11 +69,9 @@ const qadirdad = {
 
 <p align="center">
   <a href="https://open.spotify.com/user/qadirdadkazi" target="_blank">
-    <img src="https://novatorem-peach-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff" alt="Spotify Now Playing" width="360" />
+    <img src="https://novatorem-peach-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff&v=1" alt="Spotify Now Playing" width="360" />
   </a>
 </p>
-
-> 🎧 *Deploy your own Spotify card:* Fork [novatorem/nocodb](https://github.com/novatorem/novatorem) and add `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN` to your Vercel env vars, then replace the URL above with your deployment.
 
 ---
 
@@ -83,10 +81,10 @@ const qadirdad = {
 
 | 📅 Period | 💼 Role | 🛠️ Stack Highlights |
 |-----------|---------|----------------------|
-| **2024 – Present** | 🚀 Full Stack Developer | NestJS · TypeScript · PostgreSQL · Microservices |
-| **2023 – 2024** | ⚙️ Backend Developer | Node.js · Express · MongoDB · REST APIs |
-| **2022 – 2023** | 🌐 MERN Stack Developer | React · Redux · Next.js · MongoDB |
-| **2021 – 2022** | 🐘 Junior Web Developer | PHP · Laravel · MySQL · Bootstrap |
+| **2024 – Present** | 📱 Mobile & Full Stack Developer | Flutter · React Native · Android · iOS |
+| **2023 – 2024** | 🚀 MERN Stack Developer | React · Node.js · Express · MongoDB |
+| **2022 – 2023** | ⚙️ Backend Developer | NestJS · PHP · Laravel · SQL |
+| **2021 – 2022** | 🌐 Web Developer | HTML · CSS · JavaScript · Bootstrap |
 
 </div>
 
@@ -297,15 +295,7 @@ PowerShell               1 repo              ░░░░░░░░░░░�
 
 ---
 
-## 🎖️ Achievements & Badges
 
-<p align="center">
-  <a href="https://holopin.io/@qadirdad-kazi" target="_blank">
-    <img src="https://holopin.me/qadirdad-kazi" alt="Holopin Badges for @qadirdad-kazi" />
-  </a>
-</p>
-
----
 
 ## 💡 Dev Quote
 

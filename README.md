@@ -4,14 +4,14 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="3.png">
-    <source media="(prefers-color-scheme: light)" srcset="banner-light.jpeg">
-    <img src="3.png" alt="Banner" width="90%" style="border-radius: 15px; margin: 20px 0;" />
+    <source media="(prefers-color-scheme: dark)" srcset="banner-light.jpeg">
+    <source media="(prefers-color-scheme: light)" srcset="banner-dark.jpeg">
+    <img src="banner-light.jpeg" alt="Banner" width="90%" style="border-radius: 15px; margin: 20px 0;" />
   </picture>
 </div>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00BFFF&center=true&vCenter=true&width=940&lines=Hi+%F0%9F%91%8B%2C+I'm+Qadirdad+Kazi;Full+Stack+Developer+%F0%9F%9A%80;MERN+Stack+%7C+NestJS+%7C+TypeScript;Building+Scalable+Web+Applications+%F0%9F%92%BB" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00BFFF&center=true&vCenter=true&width=940&lines=Hi+%F0%9F%91%8B%2C+I'm+Qadirdad+Kazi;Full+Stack+Developer+%F0%9F%9A%80;MERN+%7C+Flutter+%7C+Android+%7C+React+Native;Building+Scalable+Web+Applications+%F0%9F%92%BB" alt="Typing SVG" />
 </h1>
 
 <p align="center">
@@ -39,14 +39,15 @@
 ```typescript
 const qadirdad = {
     location: "Pakistan 🇵🇰",
-    role: "Full Stack Developer",
+    role: "Full Stack & Mobile Developer",
     technologies: {
-        frontEnd: ["React", "Next.js", "Redux", "Tailwind CSS"],
-        backEnd: ["Node.js", "Express", "NestJS", "Laravel"],
-        databases: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
-        tools: ["Docker", "Git", "Postman", "Figma"]
+        frontEnd: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Framer Motion"],
+        backEnd: ["Node.js", "Express", "NestJS", "PHP", "Laravel"],
+        mobile: ["Flutter", "Android", "React Native", "iOS"],
+        databases: ["MongoDB", "PostgreSQL", "SQLite", "SQL"],
+        tools: ["Postman", "Cloudinary", "npm", "WordPress"]
     },
-    currentFocus: ["NestJS", "Cloud Architecture", "Microservices"],
+    currentFocus: ["Mobile App Development", "Cross-Platform Solutions"],
     openTo: ["Freelance Projects", "Full-Time Opportunities", "Collaborations"],
     portfolio: "qadirdadkazi.com"
 };
@@ -68,7 +69,7 @@ const qadirdad = {
 
 <p align="center">
   <a href="https://open.spotify.com/user/qadirdadkazi" target="_blank">
-    <img src="https://novatorem.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff" alt="Spotify Now Playing" width="360" />
+    <img src="https://novatorem-peach-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff" alt="Spotify Now Playing" width="360" />
   </a>
 </p>
 
@@ -91,39 +92,41 @@ const qadirdad = {
 
 ---
 
+<div align="center">
+
 ## 🚀 What I'm Working On
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" align="center">
 
 ### 📊 Current Projects
-- 💰 **Financial Analytics Platform**  
-  *Real-time reporting & insights for businesses*
-  
-- 🛠️ **Open Source Contributions**  
-  *Giving back to the community*
+💰 **Financial Analytics Platform**<br/>
+*Real-time reporting & insights for businesses*<br/><br/>
+🛠️ **Open Source Contributions**<br/>
+*Giving back to the community*
 
 </td>
-<td width="50%">
+<td width="50%" align="center">
 
 ### 📚 Learning Journey
-- 🎓 **Microservices Architecture**  
-  *Building scalable distributed systems*
-  
-- ☁️ **Cloud Technologies**  
-  *AWS, Docker, Kubernetes*
+🎓 **Microservices Architecture**<br/>
+*Building scalable distributed systems*<br/><br/>
+☁️ **Cloud Technologies**<br/>
+*AWS, Docker, Kubernetes*
 
 </td>
 </tr>
 </table>
+
+</div>
 
 ---
 
 ## 🛠️ Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,python,html,css,php,react,nextjs,redux,tailwind,bootstrap,materialui,nodejs,express,nestjs,laravel,graphql,mongodb,postgres,mysql,redis,firebase,git,docker,vscode,postman,figma,heroku,vercel,netlify&perline=10" alt="Tech Stack" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,jquery,react,tailwind,bootstrap,nodejs,express,nestjs,php,laravel,mongodb,postgres,sqlite,flutter,android,apple,windows,wordpress,postman&perline=10" alt="Tech Stack" />
 </p>
 
 <details>
@@ -131,19 +134,22 @@ const qadirdad = {
 <br/>
 
 **Languages:**  
-`JavaScript` • `TypeScript` • `Python` • `HTML5` • `CSS3` • `PHP`
+`JavaScript` • `HTML` • `CSS` • `PHP` • `SQL`
 
 **Frontend:**  
-`React` • `Next.js` • `Redux` • `Tailwind CSS` • `Bootstrap` • `Material-UI`
+`React.js` • `React Hook Form` • `Tailwind CSS` • `Bootstrap` • `Framer Motion` • `jQuery`
 
 **Backend:**  
-`Node.js` • `Express.js` • `NestJS` • `Laravel` • `GraphQL` • `REST APIs`
+`Node.js` • `Express.js` • `Nest.js` • `Laravel`
+
+**Mobile / Desktop:**  
+`Flutter` • `React Native` • `Android` • `iOS` • `macOS` • `Windows`
 
 **Databases:**  
-`MongoDB` • `PostgreSQL` • `MySQL` • `Redis` • `Firebase`
+`MongoDB` • `PostgreSQL` • `SQLite`
 
 **Tools & Platforms:**  
-`Git` • `Docker` • `VS Code` • `Postman` • `Figma` • `Heroku` • `Vercel` • `Netlify`
+`Postman` • `npm` • `Cloudinary` • `WordPress` • `Play Store` • `Microsoft Store` • `Apple Development`
 
 </details>
 

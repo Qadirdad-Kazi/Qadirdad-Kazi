@@ -220,6 +220,73 @@ const qadirdad = {
 ### 📊 This Week I Spent Time On
 
 <!--START_SECTION:waka-->
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-13.35%20million%20lines%20of%20code-blue?style=flat)
+
+**🐱 My GitHub Data** 
+
+> 📦 2.5 MB Used in GitHub's Storage 
+ > 
+> 🏆 2,322 Contributions in the Year 2026
+ > 
+> 💼 Opted to Hire
+ > 
+> 📜 26 Public Repositories 
+ > 
+> 🔑 28 Private Repositories 
+ > 
+**I'm a Night 🦉** 
+
+```text
+🌞 Morning                1024 commits        █████░░░░░░░░░░░░░░░░░░░░   21.93 % 
+🌆 Daytime                591 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.66 % 
+🌃 Evening                1185 commits        ██████░░░░░░░░░░░░░░░░░░░   25.38 % 
+🌙 Night                  1869 commits        ██████████░░░░░░░░░░░░░░░   40.03 % 
+```
+📅 **I'm Most Productive on Monday** 
+
+```text
+Monday                   888 commits         █████░░░░░░░░░░░░░░░░░░░░   19.02 % 
+Tuesday                  527 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.29 % 
+Wednesday                606 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.98 % 
+Thursday                 624 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.36 % 
+Friday                   663 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.20 % 
+Saturday                 846 commits         █████░░░░░░░░░░░░░░░░░░░░   18.12 % 
+Sunday                   515 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.03 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Karachi
+
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🔥 Editors: 
+No Activity Tracked This Week
+
+🐱‍💻 Projects: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+**I Mostly Code in JavaScript** 
+
+```text
+JavaScript               24 repos            ██████████░░░░░░░░░░░░░░░   38.10 % 
+TypeScript               20 repos            ████████░░░░░░░░░░░░░░░░░   31.75 % 
+Dart                     4 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   06.35 % 
+Swift                    2 repos             █░░░░░░░░░░░░░░░░░░░░░░░░   03.17 % 
+PowerShell               1 repo              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.59 % 
+```
+
+
+
+
+ Last Updated on 19/06/2026 19:14:52 UTC
 <!--END_SECTION:waka-->
 
 ---

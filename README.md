@@ -3,7 +3,11 @@
 </p>
 
 <div align="center">
-  <img src="3.png" alt="Banner" width="90%" style="border-radius: 15px; margin: 20px 0;" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="3.png">
+    <source media="(prefers-color-scheme: light)" srcset="banner-light.jpeg">
+    <img src="3.png" alt="Banner" width="90%" style="border-radius: 15px; margin: 20px 0;" />
+  </picture>
 </div>
 
 <h1 align="center">
@@ -57,6 +61,33 @@ const qadirdad = {
 - 💼 Available for **Freelance Projects** and **Full-Time Positions**
 - ✍️ Writing tech articles and sharing knowledge with the community
 - 🤝 Always open to interesting projects and collaborations
+
+---
+
+## 🎵 Coding Soundtrack
+
+<p align="center">
+  <a href="https://open.spotify.com/user/qadirdadkazi" target="_blank">
+    <img src="https://novatorem.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff" alt="Spotify Now Playing" width="360" />
+  </a>
+</p>
+
+> 🎧 *Deploy your own Spotify card:* Fork [novatorem/nocodb](https://github.com/novatorem/novatorem) and add `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN` to your Vercel env vars, then replace the URL above with your deployment.
+
+---
+
+## 💼 Experience & Career Journey
+
+<div align="center">
+
+| 📅 Period | 💼 Role | 🛠️ Stack Highlights |
+|-----------|---------|----------------------|
+| **2024 – Present** | 🚀 Full Stack Developer | NestJS · TypeScript · PostgreSQL · Microservices |
+| **2023 – 2024** | ⚙️ Backend Developer | Node.js · Express · MongoDB · REST APIs |
+| **2022 – 2023** | 🌐 MERN Stack Developer | React · Redux · Next.js · MongoDB |
+| **2021 – 2022** | 🐘 Junior Web Developer | PHP · Laravel · MySQL · Bootstrap |
+
+</div>
 
 ---
 
@@ -154,7 +185,52 @@ const qadirdad = {
   <img src="https://ghchart.rshah.org/7aa2f7/qadirdad-kazi" alt="GitHub Contribution Chart" width="95%" />
 </p>
 
+### 🐍 Contribution Snake
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/qadirdad-kazi/qadirdad-kazi/output/github-contribution-grid-snake.svg">
+  </picture>
+</p>
+
+### 🌆 GitHub Skyline
+
+<p align="center">
+  <a href="https://skyline.github.com/qadirdad-kazi/2025" target="_blank">
+    <img src="https://img.shields.io/badge/🌆_View_My-GitHub_Skyline_2025-FF6B6B?style=for-the-badge&labelColor=1a1a1a" alt="GitHub Skyline 2025" />
+  </a>
+  &nbsp;
+  <a href="https://skyline.github.com/qadirdad-kazi/2024" target="_blank">
+    <img src="https://img.shields.io/badge/🌆_View_My-GitHub_Skyline_2024-00D9FF?style=for-the-badge&labelColor=1a1a1a" alt="GitHub Skyline 2024" />
+  </a>
+</p>
+
 </div>
+
+---
+
+## ⏱️ WakaTime Coding Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=qadirdadkazi&theme=tokyonight&hide_border=true&layout=compact" alt="WakaTime Stats" />
+</p>
+
+### 📊 This Week I Spent Time On
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+---
+
+## 🎖️ Achievements & Badges
+
+<p align="center">
+  <a href="https://holopin.io/@qadirdad-kazi" target="_blank">
+    <img src="https://holopin.me/qadirdad-kazi" alt="Holopin Badges for @qadirdad-kazi" />
+  </a>
+</p>
 
 ---
 
@@ -232,5 +308,3 @@ Open to interesting partnerships
 <p align="center">
   <i>⭐️ From <a href="https://github.com/qadirdad-kazi">Qadirdad Kazi</a> with 💙</i>
 </p>
-
-

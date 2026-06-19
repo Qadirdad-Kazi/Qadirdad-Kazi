@@ -69,7 +69,7 @@ const qadirdad = {
 
 <p align="center">
   <a href="https://open.spotify.com/user/qadirdadkazi" target="_blank">
-    <img src="https://novatorem-peach-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff&v=2" alt="Spotify Now Playing" width="360" />
+    <img src="https://githubspotify-zeta.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff&v=3" alt="Spotify Now Playing" width="360" />
   </a>
 </p>
 

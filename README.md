@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Qadirdad%20Kazi&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=32" width="100%" />
 </p>
 
 <div align="center">
@@ -11,7 +11,7 @@
 </div>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00BFFF&center=true&vCenter=true&width=940&lines=Hi+%F0%9F%91%8B%2C+I'm+Qadirdad+Kazi;Full+Stack+Developer+%F0%9F%9A%80;MERN+%7C+Flutter+%7C+Android+%7C+React+Native;Building+Scalable+Web+Applications+%F0%9F%92%BB" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00BFFF&center=true&vCenter=true&width=940&lines=Hi+%F0%9F%91%8B%2C+Welcome+to+my+profile!;Full+Stack+Developer+%F0%9F%9A%80;MERN+%7C+Flutter+%7C+Android+%7C+React+Native;Building+Scalable+Web+Applications+%F0%9F%92%BB" alt="Typing SVG" />
 </h1>
 
 <p align="center">
@@ -65,11 +65,11 @@ const qadirdad = {
 
 ---
 
-## 🎵 Coding Soundtrack
+## 🎵 TRACK
 
 <p align="center">
   <a href="https://open.spotify.com/user/qadirdadkazi" target="_blank">
-    <img src="https://novatorem-peach-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff&v=1" alt="Spotify Now Playing" width="360" />
+    <img src="https://novatorem-peach-one.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff&v=2" alt="Spotify Now Playing" width="360" />
   </a>
 </p>
 

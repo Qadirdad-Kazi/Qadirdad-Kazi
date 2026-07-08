@@ -69,7 +69,7 @@ const qadirdad = {
 
 <p align="center">
   <a href="https://open.spotify.com/user/qadirdadkazi" target="_blank">
-    <img src="https://githubspotify-zeta.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff&v=3" alt="Spotify Now Playing" width="360" />
+    <img src="https://githubspotify-zeta.vercel.app/api/spotify?background_color=0d1117&border_color=ffffff&v=3" alt="Spotify Now Playing" width="360" height="100" />
   </a>
 </p>
 
@@ -272,12 +272,6 @@ Bash                     58 mins             ████░░░░░░░�
 C++                      58 mins             ████░░░░░░░░░░░░░░░░░░░░░   14.41 % 
 Dart                     42 mins             ███░░░░░░░░░░░░░░░░░░░░░░   10.42 % 
 Python                   33 mins             ██░░░░░░░░░░░░░░░░░░░░░░░   08.41 % 
-
-🔥 Editors: 
-Antigravity IDE          6 hrs 31 mins       ████████████████████████░   97.07 % 
-VS Code                  6 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   01.56 % 
-Copilot CLI              3 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.79 % 
-Cursor                   2 mins              ░░░░░░░░░░░░░░░░░░░░░░░░░   00.58 % 
 
 🐱‍💻 Projects: 
 HowlAI                   3 hrs 27 mins       █████████████░░░░░░░░░░░░   51.30 % 

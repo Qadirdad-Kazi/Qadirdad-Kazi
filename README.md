@@ -226,7 +226,7 @@ const qadirdad = {
 <!--START_SECTION:waka-->
 ![Code Time](http://img.shields.io/badge/Code%20Time-122%20hrs%204%20mins-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-13.50%20million%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-6.97%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
@@ -243,21 +243,21 @@ const qadirdad = {
 **I'm a Night 🦉** 
 
 ```text
-🌞 Morning                1079 commits        █████░░░░░░░░░░░░░░░░░░░░   21.84 % 
-🌆 Daytime                617 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.49 % 
-🌃 Evening                1257 commits        ██████░░░░░░░░░░░░░░░░░░░   25.45 % 
-🌙 Night                  1987 commits        ██████████░░░░░░░░░░░░░░░   40.22 % 
+🌞 Morning                587 commits         ███████░░░░░░░░░░░░░░░░░░   27.89 % 
+🌆 Daytime                235 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.16 % 
+🌃 Evening                548 commits         ███████░░░░░░░░░░░░░░░░░░   26.03 % 
+🌙 Night                  735 commits         █████████░░░░░░░░░░░░░░░░   34.92 % 
 ```
-📅 **I'm Most Productive on Monday** 
+📅 **I'm Most Productive on Saturday** 
 
 ```text
-Monday                   918 commits         █████░░░░░░░░░░░░░░░░░░░░   18.58 % 
-Tuesday                  561 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.36 % 
-Wednesday                627 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.69 % 
-Thursday                 648 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.12 % 
-Friday                   721 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.60 % 
-Saturday                 896 commits         █████░░░░░░░░░░░░░░░░░░░░   18.14 % 
-Sunday                   569 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.52 % 
+Monday                   412 commits         █████░░░░░░░░░░░░░░░░░░░░   19.57 % 
+Tuesday                  234 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.12 % 
+Wednesday                293 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.92 % 
+Thursday                 303 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.39 % 
+Friday                   227 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.78 % 
+Saturday                 428 commits         █████░░░░░░░░░░░░░░░░░░░░   20.33 % 
+Sunday                   208 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.88 % 
 ```
 
 
@@ -289,7 +289,7 @@ Rich Text Format         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 25/07/2026 20:54:00 UTC
+ Last Updated on 25/07/2026 21:05:47 UTC
 <!--END_SECTION:waka-->
 
 ---

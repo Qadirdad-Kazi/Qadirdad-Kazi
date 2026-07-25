@@ -267,15 +267,13 @@ Sunday                   569 commits         ███░░░░░░░░�
 🕑︎ Time Zone: Asia/Karachi
 
 💬 Programming Languages: 
-Markdown                 1 hr 1 min          █████████████████░░░░░░░░   69.69 % 
-C#                       25 mins             ███████░░░░░░░░░░░░░░░░░░   28.60 % 
-Other                    1 min               ░░░░░░░░░░░░░░░░░░░░░░░░░   01.71 % 
+No Activity Tracked This Week
 
 🐱‍💻 Projects: 
-My_World_Game            1 hr 27 mins        █████████████████████████   100.00 % 
+No Activity Tracked This Week
 
 💻 Operating System: 
-Windows                  1 hr 27 mins        █████████████████████████   100.00 % 
+No Activity Tracked This Week
 ```
 
 **I Mostly Code in JavaScript** 
@@ -291,7 +289,7 @@ Rich Text Format         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 25/07/2026 19:47:42 UTC
+ Last Updated on 25/07/2026 19:52:37 UTC
 <!--END_SECTION:waka-->
 
 ---

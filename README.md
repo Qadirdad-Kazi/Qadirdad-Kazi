@@ -224,7 +224,11 @@ const qadirdad = {
 ### 📊 This Week I Spent Time On
 
 <!--START_SECTION:waka-->
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-25.38%20million%20lines%20of%20code-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-118%20hrs%2025%20mins-blue?style=flat)
+
+![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-72%20hrs%2038%20mins-blue?style=flat)
+
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-13.99%20million%20lines%20of%20code-blue?style=flat)
 
 **🐱 My GitHub Data** 
 
@@ -238,6 +242,48 @@ const qadirdad = {
  > 
 > 🔑 29 Private Repositories 
  > 
+**I'm a Night 🦉** 
+
+```text
+🌞 Morning                1189 commits        ██████░░░░░░░░░░░░░░░░░░░   24.31 % 
+🌆 Daytime                626 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.80 % 
+🌃 Evening                1202 commits        ██████░░░░░░░░░░░░░░░░░░░   24.58 % 
+🌙 Night                  1874 commits        ██████████░░░░░░░░░░░░░░░   38.32 % 
+```
+📅 **I'm Most Productive on Saturday** 
+
+```text
+Monday                   873 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.85 % 
+Tuesday                  525 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.73 % 
+Wednesday                604 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.35 % 
+Thursday                 623 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.74 % 
+Friday                   697 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.25 % 
+Saturday                 1027 commits        █████░░░░░░░░░░░░░░░░░░░░   21.00 % 
+Sunday                   542 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.08 % 
+```
+
+
+📊 **This Week I Spent My Time On** 
+
+```text
+🕑︎ Time Zone: Asia/Karachi
+
+💬 Programming Languages: 
+No Activity Tracked This Week
+
+🐱‍💻 Projects: 
+No Activity Tracked This Week
+
+💻 Operating System: 
+No Activity Tracked This Week
+```
+
+🤖 **AI Coding This Week** 
+
+```text
+No AI Coding Activity Tracked This Week
+```
+
 **I Mostly Code in TypeScript** 
 
 ```text
@@ -251,7 +297,7 @@ Rich Text Format         1 repo              ░░░░░░░░░░░�
 
 
 
- Last Updated on 07/08/2026 00:28:08 UTC
+ Last Updated on 07/08/2026 00:34:52 UTC
 <!--END_SECTION:waka-->
 
 ---
